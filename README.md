@@ -8,14 +8,38 @@
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
-[Incluye la descripción de tu proyecto.]
+
+Mi Portafolios consta de 7 páginas. En todas ellas, el factor común es el
+encabezado y pie de página. El encabezado en la parte izquierda, tiene el
+logotipo y a continuación el menú de navegación por las diferentes páginas, el
+pie de página contiene a la izquierda el copyright y marca registrada y a la
+derecha, los iconos de las diferentes redes sociales.
+La primera página será la de inicio, que contiene en la parte superior
+del cuerpo mi nombre y “desarrollo de aplicaciones web”, justo debajo, una
+foto que ocupa casi toda la página web. La siguiente es “Sobre MI” donde en
+el cuerpo se alterna breve descripción junto con imágenes a derecha e
+izquierda. Ahora pasamos a formulario de contacto donde en la parte superior
+está tres input con sus respectivos label y a la derecha una foto, justo debajo
+un textarea y un botón.El currículum consta de una línea de tiempo con
+recuadros a los dos lados con las diferentes fechas y descripción del trabajo o
+estudios realizado. En mis proyectos, la mitad superior está compuesta por
+los enlaces a diferentes proyectos y la mitad inferior por los diferentes logos
+de las empresas que he colaborado. La siguiente página es la de testimonios
+donde en la parte izquierda está un video del testimonio y debajo una frase
+sobre él, en la derecha hay dos fotos, una arriba y otra debajo, de fotos sobre
+el proyecto al que el testimonio se refiere. Pasamos a la última página, la cual
+es la de contacto, podemos ver que en la parte izquierda se enumeran los
+diferentes datos, como las redes sociales, en la derecha esta una foto y
+debajo el mapa.
 
 ## PROTOTIPO<a name="id2"></a>
-[Incluye el enlace a tu prototipo realizado en Figma.]
+https://www.figma.com/proto/6mxgUJHwI4Z6KhjPiaiqWO/Portafolios?node-id=38%3A2&scaling=min-zoom&page-id=27%3A3
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[Listado de modificaciones realizadas debidadmente justificadas. ]
+1.En la pagina de inicio he cambiado la imagen principal del prototipo, ya que esta no tenia suficiente calidad.
 
+2.Tambien he modificado la pagina de mis proyectos, ya que se pedia que se pusiera una imagen y un texto por cada proyecto y en mi prototipo no era si.
+3.
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
 
