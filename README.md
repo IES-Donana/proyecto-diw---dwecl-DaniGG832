@@ -36,9 +36,9 @@ debajo el mapa.
 https://www.figma.com/proto/6mxgUJHwI4Z6KhjPiaiqWO/Portafolios?node-id=38%3A2&scaling=min-zoom&page-id=27%3A3
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-1.En la pagina de inicio he cambiado la imagen principal del prototipo, ya que esta no tenia suficiente calidad.
+1.En la página de inicio he cambiado la imagen principal del prototipo, ya que esta no tenia suficiente calidad.
 
-2.Tambien he modificado la pagina de mis proyectos, ya que se pedia que se pusiera una imagen y un texto por cada proyecto y en mi prototipo no era si.
+2.También he modificado la página de mis proyectos, ya que se pedia que se pusiera una imagen y un texto por cada proyecto y en mi prototipo no era asi.
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
