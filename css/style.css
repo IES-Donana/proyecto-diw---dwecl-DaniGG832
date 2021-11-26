@@ -62,6 +62,15 @@ a{
     font-variant: small-caps;
     font-size: 1em;
 }
+li a:hover{
+   color: #D8E9A8;
+   text-decoration: overline;
+}
+li a:visited{
+    text-decoration: underline;
+}
+
+
 #menu{
     background-color: #1E5128;
     border: 1px solid #000000;
