@@ -40,6 +40,11 @@ header{
 #logo{
     width: 12em;
     margin-left: 3em;
+    transition: width 3s;
+}
+#logo:hover{
+    width: 20em;
+    
 }
 ul{   
     display: flex;
@@ -54,14 +59,27 @@ ul{
 ul li{
     margin:0px 1em;
     list-style:none;
+    
 }
 
-a{
+li a{
     color: #4E9F3D;
     font-weight: bold;
     font-variant: small-caps;
     font-size: 1em;
+    
 }
+li a:hover{
+   color: #D8E9A8;
+   text-decoration: overline;
+   transition: 1.5s;
+}
+
+li a:visited{
+    text-decoration: underline;
+}
+
+
 #menu{
     background-color: #1E5128;
     border: 1px solid #000000;
