@@ -1,12 +1,15 @@
+/*  */
+
 @font-face{
     font-family: "Poppins";
     src: url("../font/poppins/Poppins-Medium.ttf");
-  }
-  @font-face{
+}
+@font-face{
     font-family: "lora";
     src: url("../font/lora/Lora-Regular.ttf");
-  }
+}
 
+/* reseteo página */
   
 
 *{
@@ -22,6 +25,7 @@
     
     
 }
+/* ------------------------------------- */
 
 /* cabecera */
 header{
@@ -37,6 +41,11 @@ header{
     width: 12em;
     margin-left: 3em;
 }
+ul{   
+    display: flex;
+}
+
+/* ------------------------------------- */
 
 /* menu */
 #enlacesmenu{
@@ -64,6 +73,50 @@ a{
     align-items: center;
     margin-right: 2em;
 }
+#redes ul li img{
+    width: 2em;
+}
+#redes ,#copyright{
+    margin: 0em 1em;
+    font-family: lora;
+}
+/* ------------------------------------- */
+/* footer */
+
+footer{
+    background-color: #1E5128;
+    color: #9B9B9B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7em;
+}
+
+/* ---------------------------- */
+
+/* index */
+
+
+img#principal{
+    height: 45em;
+}
+section p.h1index {
+    color: #1E5128;
+    margin-top: 15px;
+    font-family: Poppins;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;   
+    text-shadow: 1px 4px 4px rgba(	78,	159,	61, 2);
+    font-weight: bold;
+    flex-wrap: nowrap;
+}
+span{
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+
 /* mis proyectos  */
 #imgempresas div img{
     margin: 3em 2em;
@@ -100,6 +153,7 @@ a{
      font-size: 0.9em;
  }
 /* ------------------------------------- */
+
 /* seccion sobre mi */
 div.sobre{
     display: flex;
@@ -198,6 +252,8 @@ button{
     margin-bottom: 3em;
     padding: 1em ;
 }
+/* ------------------------------------- */
+
 /* redes sociales */
 .redes{
     display: flex;
@@ -224,12 +280,13 @@ button{
     margin-left: 1em;
 }
 #mapa img{
-    width: 13em;
+    width: 19em;
     margin-bottom: 5em;
     margin-top: 0em;
 }
 
 /* ---------------------------------- */
+
 /* curriculum */
 #contenidocurriculum{
     display: flex;
@@ -287,6 +344,8 @@ span{
 
 
 /* ---------------------------------- */
+
+/* contenido general */
 #titulo{
     margin-top: 2em;
     margin-left: -14em;
@@ -310,43 +369,7 @@ section{
     align-items: center;
     flex-direction: column;
 }
-section p.h1index {
-    color: #1E5128;
-    margin-top: 15px;
-    font-family: Poppins;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: bold;   
-    text-shadow: 1px 4px 4px rgba(	78,	159,	61, 2);
-    font-weight: bold;
-    flex-wrap: nowrap;
-}
-span{
-    font-weight: bold;
-}
-footer{
-    background-color: #1E5128;
-    color: #9B9B9B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 7em;
-}
-
-#redes ul li img{
-    width: 2em;
-}
-#redes ,#copyright{
-    margin: 0em 1em;
-    font-family: lora;
-}
-ul{
-    
-    display: flex;
-
-}
 
 
-img#principal{
-    height: 45em;
-}
+
+
