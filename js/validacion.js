@@ -1,11 +1,13 @@
 let formulario1 = document.forms[0];
 
+/* document.getElementById("area").disabled = false; */
+formulario1.addEventListener("change",habilitar)
 document.getElementById("boton").addEventListener("click", validar);
-/* document.getElementById("formContacto").addEventListener("keyup", texarea); */
-/* document.getElementById("texarea").addEventListener("input",habilitartexarea); */
+
 
 document.getElementById("email").addEventListener("keypress", emailMay);
 document.getElementById("email").addEventListener("blur",emailminusculas);
+document.getElementById("email").addEventListener("blur",validaremail);
 
 document.getElementById("nombre").addEventListener("keydown",validarnombre);
 document.getElementById("nombre").addEventListener("blur",validarnombre); 
@@ -13,22 +15,34 @@ document.getElementById("nombre").addEventListener("blur",validarnombre);
 document.getElementById("apellidos").addEventListener("keypress",validarapellido);
 document.getElementById("apellidos").addEventListener("blur",validarapellido);
 
-/* document.getElementById("telefono").addEventListener("keypress",e=>e.alert);
-document.getElementById("telefono").addEventListener("keypress",e=>e.alert); */
+document.getElementById("telefono").addEventListener("keypress",validartelefono);
+document.getElementById("telefono").addEventListener("blur",validartelefono);
 
 
 /* validar formulario */
 function validar(evento){
 
-    if (prompt("quieres mandar los daros")) {
+    if (validarnombre() && validarapellido && validartelefono() &&
+        validaremail() && confirm("Deseas mandar los datos del formulario")) {
         return true
     }
     else{
         evento.preventDefault();
+        console.log("el formulario no se ha mandado");
         return false;
+    }
+
+
 }
 
 
+
+function habilitar(e) {
+    if(validarnombre() && validarapellido  && validaremail()){
+        console.log("texarea");
+        document.getElementById("area").disabled = false;
+    }
+    
 }
 
 /* validar nombre */
@@ -38,11 +52,13 @@ function validarnombre(e) {
     console.log(elemento.checkValidity());
     if(!elemento.checkValidity()){
         error(elemento,"errornombre");
-       /*  document.getElementById("errornombre").innerHTML = elemento.validationMessage; */
+        return false;
+       
     }
     else{
         borrarerror(elemento,"errornombre");
-        /* document.getElementById("errornombre").innerHTML ="-"; */
+        return true;
+        
     }
 }
 
@@ -54,32 +70,58 @@ function validarapellido(e) {
     console.log(!elemento.checkValidity());
     if(!elemento.checkValidity()){
         error(elemento,"errorapellido"); 
-       /* document.getElementById("errorapellido").innerHTML = elemento.validationMessage ;  */
+        return false;
+       
     }
     else{
         borrarerror(elemento,"errorapellido");
-        /* document.getElementById("errorapellido").innerHTML ="-"; */
+        return true;
+        
     }
 }
 
+/* validar telefono  */
 
-/* function error(elemento,id) {
-    document.getElementById(id).innerHTML = elemento.validationMessage;
+function validartelefono(e) {
 
-    
-} */
-let texarea = document.getElementById("texarea");
-texarea.style.disable = true;
+    let elemento = document.getElementById("telefono");
+    console.log(!elemento.checkValidity());
+    if(!elemento.checkValidity()){
+        error(elemento,"errortlf"); 
+        return false;
+       
+    }
+    else{
+        borrarerror(elemento,"errortlf");
+        
+        return true;
+    }
+}
+
 
 /* pasar a minusculas email en el caso que este activado bloq mayus */
 function emailminusculas() {
     let str = document.getElementById("email").value;
     document.getElementById("email").value = str.toLowerCase();
-    texarea.style.disable = true;
+    
 }
 
-
-
+function validaremail(e) {
+    let elemento = document.getElementById("email");
+    console.log(!elemento.checkValidity());
+    if(!elemento.checkValidity()){
+        error(elemento,"erroremail"); 
+        document.getElementById("imgform").style.display="none";
+        return false;
+       
+    }
+    else{
+        
+        document.getElementById("imgform").style.display="";
+        borrarerror(elemento,"erroremail");
+        return true;
+    }
+}
 function emailMay(e) {
     
     emailminusculas();
@@ -102,9 +144,6 @@ function emailMay(e) {
 function error(elemento,id) {
     document.getElementById(id).innerHTML = elemento.validationMessage;
 }
-/* function error(elemento, id) {
-    document.getElementById(mensaje).innerHTML = elemento.validationMessage;
-} */
 
 
 /* borrar mensaje error */
@@ -112,13 +151,3 @@ function borrarerror(elemento, mensaje) {
     document.getElementById(mensaje).innerHTML = "-";
 }
 
-/* function texarea() {
-    const inpObj = document.getElementById("formContacto");
-    if(inpObj.checkValidity()){
-        texarea.style.disable = false;
-    }
-    else{
-        texarea.style.disable = true;
-    }
-    
-} */

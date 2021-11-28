@@ -42,7 +42,7 @@
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
-                 <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}">
+                 <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}" required="required">
                  <p id="errorapellido">-</p>
                 </div>
                 <div>
@@ -57,17 +57,17 @@
                  title='ej: "name@example.com"' required="required">
                  <p id="erroremail">-</p>
                 </div>
-                <div>
-                  <p id="menserror">-</p>
-                </div>
+                
+                
               </div>
               <div>
                  <img id="imgform" src="img/2021-0804.png" alt="foto email enviandose">
               </div>
                
            </div>
+           <p id="menserror">El textarea se habilitara cuando todos los campos sean corrrectos.</p>
            <div>
-            <textarea name="texarea" id="texarea" cols="30" rows="10" disabled
+            <textarea name="texarea" id="area" cols="30" rows="10" disabled="true"
             minlength="10" maxlength="1000"></textarea>
           </div>
           <div>
