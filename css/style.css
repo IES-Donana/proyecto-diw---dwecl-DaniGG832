@@ -118,7 +118,7 @@ footer{
 img#principal{
     height: 45em;
 }
-section p.h1index {
+.h1index {
     color: #1E5128;
     margin-top: 15px;
     font-family: Poppins;
@@ -183,7 +183,7 @@ div.sobre{
 }
 .sobre p{
     width: 18em;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 1em 2em;
 
 }
@@ -233,7 +233,7 @@ div.sobre{
 }
 
 #imgform{
-    width: 15em;
+    width: 13em;
 }
 form{
   display: flex;
@@ -246,18 +246,31 @@ label{
   }
 input{
     background-color: #4E9F3D;
+    padding: 3px;
 }
-input, label{
-    margin: 1em;
-    font-size: 1.5em;
+input::placeholder { 
+    color: #3a6e41; 
 
 }
+
+input, label{
+    margin: 1em;
+    font-size: 1.3em;
+
+}
+input:invalid, textarea:invalid {
+    border: 2px dashed red;
+}
+  
+  input:valid, textarea:valid {
+    border: 2px solid black;
+}
 textarea{
-    width: 25em;
+    width: 27em;
     height: 15em;
     background-color: #4E9F3D;
     /* color: #1E5128; */
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 1em;
     padding: 1em;
 }
