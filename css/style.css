@@ -265,6 +265,10 @@ input:invalid, textarea:invalid {
   input:valid, textarea:valid {
     border: 2px solid black;
 }
+
+#menserror{
+    margin-top: 3em;
+}
 textarea{
     width: 27em;
     height: 15em;

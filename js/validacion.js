@@ -12,7 +12,7 @@ document.getElementById("email").addEventListener("blur",validaremail);
 document.getElementById("nombre").addEventListener("keydown",validarnombre);
 document.getElementById("nombre").addEventListener("blur",validarnombre); 
 
-document.getElementById("apellidos").addEventListener("keypress",validarapellido);
+document.getElementById("apellidos").addEventListener("keydown",validarapellido);
 document.getElementById("apellidos").addEventListener("blur",validarapellido);
 
 document.getElementById("telefono").addEventListener("keypress",validartelefono);
@@ -22,13 +22,14 @@ document.getElementById("telefono").addEventListener("blur",validartelefono);
 /* validar formulario */
 function validar(evento){
 
-    if (validarnombre() && validarapellido && validartelefono() &&
+    if (validarnombre() && validarapellido() && validartelefono() &&
         validaremail() && confirm("Deseas mandar los datos del formulario")) {
         return true
     }
     else{
         evento.preventDefault();
         console.log("el formulario no se ha mandado");
+        
         return false;
     }
 
@@ -38,9 +39,12 @@ function validar(evento){
 
 
 function habilitar(e) {
-    if(validarnombre() && validarapellido  && validaremail()){
+    if(validarnombre() && validarapellido()  && validaremail()){
         console.log("texarea");
         document.getElementById("area").disabled = false;
+    }
+    else{
+        document.getElementById("area").disabled = true;
     }
     
 }
@@ -49,7 +53,7 @@ function habilitar(e) {
 
 function validarnombre(e) {
     let elemento = document.getElementById("nombre");
-    console.log(elemento.checkValidity());
+    
     if(!elemento.checkValidity()){
         error(elemento,"errornombre");
         return false;
@@ -67,9 +71,9 @@ function validarnombre(e) {
 function validarapellido(e) {
 
     let elemento = document.getElementById("apellidos");
-    console.log(!elemento.checkValidity());
+   
     if(!elemento.checkValidity()){
-        error(elemento,"errorapellido"); 
+        error(elemento,"errorapellido");
         return false;
        
     }
@@ -143,6 +147,7 @@ function emailMay(e) {
 
 function error(elemento,id) {
     document.getElementById(id).innerHTML = elemento.validationMessage;
+    
 }
 
 
