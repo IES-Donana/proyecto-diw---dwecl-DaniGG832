@@ -7,7 +7,7 @@
   <title>Contacto</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
-  <script defer src="js/js.js"></script>
+  <script defer src="js/validacion.js"></script>
 </head>
 <body>
   <header>
@@ -38,20 +38,27 @@
                 <div>
                  <label for="nombre">Nombre:</label>
                  <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}" required="required">
+                 <p id="errornombre">-</p>
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
                  <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}">
+                 <p id="errorapellido">-</p>
                 </div>
                 <div>
                   <label for="telefono">Telefono:</label>
                   <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
                   placeholder="000-000-000" title='ej: 000-000-000' >
+                  <p id="errortlf">-</p>
                  </div>
                 <div>
                  <label for="email">Email:</label>
-                 <input type="email" id="email"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+                 <input type="email" id="email"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
                  title='ej: "name@example.com"' required="required">
+                 <p id="erroremail">-</p>
+                </div>
+                <div>
+                  <p id="menserror">-</p>
                 </div>
               </div>
               <div>
@@ -60,7 +67,7 @@
                
            </div>
            <div>
-            <textarea name="texarea" id="texarea" cols="30" rows="10" required="required"
+            <textarea name="texarea" id="texarea" cols="30" rows="10" disabled
             minlength="10" maxlength="1000"></textarea>
           </div>
           <div>
