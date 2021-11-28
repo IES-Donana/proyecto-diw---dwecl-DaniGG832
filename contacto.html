@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,33 +12,32 @@
 <body>
   <header>
     <div>
-      <img id="logo" src="img/icono dg.png" alt="logo, letras d g">
+      <img id="logo" src="img/icono-dg.png" alt="logo, letras d g">
     </div>
-    <main id="menu">
+    <nav id="menu">
       <ul id="enlacesmenu">
-        <li><a href="index.html">Inicio</li></a>
-        <li><a href="Sobre-mi.html">Sobre Mi</li></a>
-        <li><a href="mis-proyectos.html">Mis Proyectos</li></a>
-        <li><a href="testimonios.html">Testimonios</li></a>
-        <li><a href="curriculum.html">Curriculum</li></a>
-        <li><a href="redes-sociales.html">Redes Sociales</li></a>
-        <li><a href="contacto.html">Contacto</li></a>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Sobre-mi.html">Sobre Mi</a></li>
+        <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="redes-sociales.html">Redes Sociales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </main>
+    </nav>
   </header>
-  <article id="contenido">
     <article id="contenido">
         <section >
           <div>
-            <h1 id="titulo">Formulario de Contacto:</h1>
+            <h2 id="titulo">Formulario de Contacto:</h2>
           </div>
-          <form id="formContacto" action="" method="post">
+          <form id="formContacto" action="validar.php" method="post">
             
              <div id="formulario1">
                 <div>
                 <div>
                  <label for="nombre">Nombre:</label>
-                 <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}"required="required">
+                 <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}" required="required">
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
@@ -50,13 +49,13 @@
                   placeholder="000-000-000" title='ej: 000-000-000' >
                  </div>
                 <div>
-                 <label for="nombre">Email:</label>
-                 <input type="email" id="nombre"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+                 <label for="email">Email:</label>
+                 <input type="email" id="email"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
                  title='ej: "name@example.com"' required="required">
                 </div>
               </div>
               <div>
-                 <img id="imgform" src="img/2021-0804 LP_Ansprechpartnersuchen_04_Zeichenfläche 1 Kopie 72-b0205a36.png" alt="foto email enviandose">
+                 <img id="imgform" src="img/2021-0804.png" alt="foto email enviandose">
               </div>
                
            </div>
@@ -72,7 +71,7 @@
          </form>
         </section>
       </article>
-  </article>
+  
   <footer id="pie">
     <div id="copyright">
       <p>®DGWeb</p>
@@ -81,20 +80,20 @@
     <div id="redes">
       <ul>
         <li>
-          <a href="https://github.com/DaniGG832?tab=repositories" target="_blan">
+          <a href="https://github.com/DaniGG832?tab=repositories" target="blan">
           <img src="img/GITHUB_icon-icons.com_65553.png" alt="logo github"></a>
         </li>
         <li>
-          <a href="https://es-es.facebook.com/" target="_blan">
+          <a href="https://es-es.facebook.com/" target="blan">
             <img src="img/FB_icon-icons.com_65534.png" alt="logo facebook">
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/?hl=es" target="_blan">
+          <a href="https://www.instagram.com/?hl=es" target="blan">
             <img src="img/INSTAGRAM_icon-icons.com_65535.png" alt="logo instagram"></a>
         </li>
         <li>
-          <a href="https://twitter.com/?lang=es" target="_blan">
+          <a href="https://twitter.com/?lang=es" target="blan">
             <img src="img/TWITTER_icon-icons.com_65536.png" alt="logo twiter">
           </a>
         </li>
