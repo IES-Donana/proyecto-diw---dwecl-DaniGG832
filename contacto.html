@@ -7,6 +7,7 @@
   <title>Contacto</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
+  <script defer src="js/js.js"></script>
 </head>
 <body>
   <header>
@@ -31,23 +32,27 @@
           <div>
             <h1 id="titulo">Formulario de Contacto:</h1>
           </div>
-          <form action="">
+          <form id="formContacto" action="" method="post">
             
              <div id="formulario1">
                 <div>
                 <div>
                  <label for="nombre">Nombre:</label>
-                 <input type="text" id="nombre">
+                 <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}"required="required">
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
-                 <input type="text" id="apellidos">
-                
+                 <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}">
                 </div>
                 <div>
+                  <label for="telefono">Telefono:</label>
+                  <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
+                  placeholder="000-000-000" title='ej: 000-000-000' >
+                 </div>
+                <div>
                  <label for="nombre">Email:</label>
-                 <input type="email" id="nombre">
-                
+                 <input type="email" id="nombre"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+                 title='ej: "name@example.com"' required="required">
                 </div>
               </div>
               <div>
@@ -56,10 +61,12 @@
                
            </div>
            <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="texarea" id="texarea" cols="30" rows="10" required="required"
+            minlength="10" maxlength="1000"></textarea>
           </div>
           <div>
-            <button>Enviar</button>
+            <button type="submit" id="boton">Enviar</button>
+            <!-- <button type="reset">reset</button> -->
           </div>
     
          </form>

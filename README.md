@@ -8,6 +8,7 @@
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
+
 Mi Portafolios consta de 7 páginas. En todas ellas, el factor común es el
 encabezado y pie de página. El encabezado en la parte izquierda, tiene el
 logotipo y a continuación el menú de navegación por las diferentes páginas, el
