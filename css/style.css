@@ -63,6 +63,8 @@ li a {
   font-weight: bold;
   font-variant: small-caps;
   font-size: 1em;
+  font-family: Poppins;
+
 }
 
 
@@ -132,6 +134,10 @@ span {
 /* ------------------------------------- */
 
 /* mis proyectos  */
+
+#proyectoweb h2{
+    justify-content: end;
+}
 #imgempresas div img {
   margin: 3em 2em;
   height: 4em;
@@ -422,6 +428,8 @@ span {
   margin-left: -14em;
   /* text-decoration: underline; */
   font-size: 1.7em;
+  font-family: Poppins;
+
 }
 
 article {
