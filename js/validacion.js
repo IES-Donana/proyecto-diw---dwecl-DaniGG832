@@ -1,0 +1,168 @@
+let formulario1 = document.forms[0];
+
+/* evento al hace algun cambio en el formulario y llama a la funcion
+habilitar, donde si se cumple las condiciones se habilita el texarea  */
+formulario1.addEventListener("change",habilitar);
+
+/* evento al pulsar el boton del formulario */
+document.getElementById("boton").addEventListener("click", validar);
+
+
+/* eventos del formulario para el input email */
+document.getElementById("email").addEventListener("keypress", emailMay);
+document.getElementById("email").addEventListener("blur",emailminusculas);
+document.getElementById("email").addEventListener("blur",validaremail);
+
+/* eventos para validar el campo nombre */
+document.getElementById("nombre").addEventListener("keydown",validarnombre);
+document.getElementById("nombre").addEventListener("blur",validarnombre); 
+
+/* eventos para validar el apellido  */
+document.getElementById("apellidos").addEventListener("keydown",validarapellido);
+document.getElementById("apellidos").addEventListener("blur",validarapellido);
+
+/* eventos para validar el apellido */
+document.getElementById("telefono").addEventListener("keypress",validartelefono);
+document.getElementById("telefono").addEventListener("blur",validartelefono);
+
+
+/* validar formulario y mandar o parar en caso de faltar algun requisito */
+function validar(evento){
+
+    if (validarnombre() && validarapellido() && validartelefono() &&
+        validaremail() && confirm("Deseas mandar los datos del formulario")) {
+        return true
+    }
+    else{
+        evento.preventDefault();
+        console.log("el formulario no se ha mandado");
+        
+        return false;
+    }
+
+
+}
+
+
+/* Habilitar el textarea cuando todos los campos anteriores no estén validados correctamente */
+function habilitar(e) {
+    if(validarnombre() && validarapellido()  && validaremail()){
+        console.log("texarea");
+        document.getElementById("area").disabled = false;
+    }
+    else{
+        document.getElementById("area").disabled = true;
+    }
+    
+}
+
+/* validar nombre */
+
+function validarnombre(e) {
+    let elemento = document.getElementById("nombre");
+    
+    if(!elemento.checkValidity()){
+        error(elemento,"errornombre");
+        return false;
+       
+    }
+    else{
+        borrarerror(elemento,"errornombre");
+        return true;
+        
+    }
+}
+
+/* validar apellido */
+
+function validarapellido(e) {
+
+    let elemento = document.getElementById("apellidos");
+   
+    if(!elemento.checkValidity()){
+        error(elemento,"errorapellido");
+        return false;
+       
+    }
+    else{
+        borrarerror(elemento,"errorapellido");
+        return true;
+        
+    }
+}
+
+/* validar telefono  */
+
+function validartelefono(e) {
+
+    let elemento = document.getElementById("telefono");
+    console.log(!elemento.checkValidity());
+    if(!elemento.checkValidity()){
+        error(elemento,"errortlf"); 
+        return false;
+       
+    }
+    else{
+        borrarerror(elemento,"errortlf");
+        
+        return true;
+    }
+}
+
+
+/* pasar a minusculas email en el caso que este activado bloq mayus */
+function emailminusculas() {
+    let str = document.getElementById("email").value;
+    document.getElementById("email").value = str.toLowerCase();
+    
+}
+
+/* validar email */
+function validaremail(e) {
+    let elemento = document.getElementById("email");
+    console.log(!elemento.checkValidity());
+    if(!elemento.checkValidity()){
+        error(elemento,"erroremail"); 
+        
+        return false;
+       
+    }
+    else{
+        
+        
+        borrarerror(elemento,"erroremail");
+        return true;
+    }
+}
+
+/* avisar al usuario con un alert cuando pulse shift + una tecla del teclado */
+function emailMay(e) {
+    
+    emailminusculas();
+   
+    if(e.shiftKey){
+
+        document.getElementById("erroremail").innerHTML= "No se permiten mayusculas"; 
+        alert("No esta permitido mayusculas en le correo") 
+          
+    }
+    else{
+        document.getElementById("erroremail").innerHTML= "";
+    }
+     
+}
+
+
+/* mensaje error */
+
+function error(elemento,id) {
+    document.getElementById(id).innerHTML = elemento.validationMessage;
+    
+}
+
+
+/* borrar mensaje error */
+function borrarerror(elemento, mensaje) {
+    document.getElementById(mensaje).innerHTML = "";
+}
+
