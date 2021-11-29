@@ -40,7 +40,7 @@ function validar(evento){
     else{
         evento.preventDefault();
         console.log("el formulario no se ha mandado");
-        alert("completa los campos correctamente");
+        alert("Completa los campos correctamente");
         return false;
     }
 
