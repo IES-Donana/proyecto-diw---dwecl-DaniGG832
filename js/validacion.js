@@ -25,23 +25,29 @@ document.getElementById("apellidos").addEventListener("blur",validarapellido);
 document.getElementById("telefono").addEventListener("keypress",validartelefono);
 document.getElementById("telefono").addEventListener("blur",validartelefono);
 
+/* validar texarea  */
+document.getElementById("area").addEventListener("keydown",validartextarea);
+document.getElementById("area").addEventListener("blur",validartextarea); 
 
 /* validar formulario y mandar o parar en caso de faltar algun requisito */
 function validar(evento){
 
     if (validarnombre() && validarapellido() && validartelefono() &&
-        validaremail() && confirm("Deseas mandar los datos del formulario")) {
+        validaremail() && validartextarea() && confirm("Deseas mandar los datos del formulario")) {
+        
         return true
     }
     else{
         evento.preventDefault();
         console.log("el formulario no se ha mandado");
-        
+        alert("Completa los campos correctamente");
         return false;
     }
 
 
 }
+
+
 
 
 /* Habilitar el textarea cuando todos los campos anteriores no estén validados correctamente */
@@ -152,6 +158,30 @@ function emailMay(e) {
      
 }
 
+/* validar texarea */
+function validartextarea(e) {
+    let elemento = document.getElementById("area");
+    
+    if(!elemento.checkValidity()){
+        document.getElementById("mensajetexarea").style.color="red";
+        if(elemento.validity.valueMissing){
+            document.getElementById("mensajetexarea").innerHTML="Rellene el texarea por favor, debe de tener min 10 caracteres ";
+        }
+        else {
+            error(elemento,"mensajetexarea");
+        }
+        
+        return false;
+       
+    }
+    else{
+        borrarerror(elemento,"mensajetexarea");
+        
+        return true;
+        
+    }
+    
+}
 
 /* mensaje error */
 
