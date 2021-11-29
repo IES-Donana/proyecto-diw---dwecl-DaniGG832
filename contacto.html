@@ -38,26 +38,26 @@
                 <div>
                  <label for="nombre">Nombre:</label>
                  <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}" 
-                 required="required">
-                 <p id="errornombre">-</p>
+                 required="required" title="Introduce de 2 a 20 caracteres">
+                 <p id="errornombre"></p>
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
                  <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}" 
-                 required="required">
-                 <p id="errorapellido">-</p>
+                 required="required" title="Introduce de 2 a 50 caracteres">
+                 <p id="errorapellido"></p>
                 </div>
                 <div>
                   <label for="telefono">Telefono:</label>
                   <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
                   placeholder="000-000-000" title='ej: 000-000-000' >
-                  <p id="errortlf">-</p>
+                  <p id="errortlf"></p>
                  </div>
                 <div>
                  <label for="email">Email:</label>
                  <input type="email" id="email"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
                  title='ej: "name@example.com"' required="required">
-                 <p id="erroremail">-</p>
+                 <p id="erroremail"></p>
                 </div>
                 
                 

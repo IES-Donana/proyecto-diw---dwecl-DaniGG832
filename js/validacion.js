@@ -115,13 +115,13 @@ function validaremail(e) {
     console.log(!elemento.checkValidity());
     if(!elemento.checkValidity()){
         error(elemento,"erroremail"); 
-        document.getElementById("imgform").style.display="none";
+        
         return false;
        
     }
     else{
         
-        document.getElementById("imgform").style.display="";
+        
         borrarerror(elemento,"erroremail");
         return true;
     }
@@ -137,7 +137,7 @@ function emailMay(e) {
           
     }
     else{
-        document.getElementById("erroremail").innerHTML= "-";
+        document.getElementById("erroremail").innerHTML= "";
     }
      
 }
@@ -153,6 +153,6 @@ function error(elemento,id) {
 
 /* borrar mensaje error */
 function borrarerror(elemento, mensaje) {
-    document.getElementById(mensaje).innerHTML = "-";
+    document.getElementById(mensaje).innerHTML = "";
 }
 

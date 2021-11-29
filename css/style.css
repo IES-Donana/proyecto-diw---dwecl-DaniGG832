@@ -225,13 +225,17 @@ div.sobre{
 
 /* contactos */
 #formulario1{
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 2em;
 }
-
+#formulario1 p{
+    width: 27em;
+    color: red;
+}
 #imgform{
     width: 13em;
 }
