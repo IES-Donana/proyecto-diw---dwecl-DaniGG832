@@ -317,9 +317,13 @@ button {
   margin: 2em;
 }
 
+.redes a img{
+   margin-left: 6em; 
+}
 #contenidoredes {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 3em;
 }
 
