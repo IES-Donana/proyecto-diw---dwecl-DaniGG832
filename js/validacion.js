@@ -1,25 +1,32 @@
 let formulario1 = document.forms[0];
 
-/* document.getElementById("area").disabled = false; */
-formulario1.addEventListener("change",habilitar)
+/* evento al hace algun cambio en el formulario y llama a la funcion
+habilitar, donde si se cumple las condiciones se habilita el texarea  */
+formulario1.addEventListener("change",habilitar);
+
+/* evento al pulsar el boton del formulario */
 document.getElementById("boton").addEventListener("click", validar);
 
 
+/* eventos del formulario para el input email */
 document.getElementById("email").addEventListener("keypress", emailMay);
 document.getElementById("email").addEventListener("blur",emailminusculas);
 document.getElementById("email").addEventListener("blur",validaremail);
 
+/* eventos para validar el campo nombre */
 document.getElementById("nombre").addEventListener("keydown",validarnombre);
 document.getElementById("nombre").addEventListener("blur",validarnombre); 
 
+/* eventos para validar el apellido  */
 document.getElementById("apellidos").addEventListener("keydown",validarapellido);
 document.getElementById("apellidos").addEventListener("blur",validarapellido);
 
+/* eventos para validar el apellido */
 document.getElementById("telefono").addEventListener("keypress",validartelefono);
 document.getElementById("telefono").addEventListener("blur",validartelefono);
 
 
-/* validar formulario */
+/* validar formulario y mandar o parar en caso de faltar algun requisito */
 function validar(evento){
 
     if (validarnombre() && validarapellido() && validartelefono() &&
@@ -37,7 +44,7 @@ function validar(evento){
 }
 
 
-
+/* Habilitar el textarea cuando todos los campos anteriores no estén validados correctamente */
 function habilitar(e) {
     if(validarnombre() && validarapellido()  && validaremail()){
         console.log("texarea");
@@ -110,6 +117,7 @@ function emailminusculas() {
     
 }
 
+/* validar email */
 function validaremail(e) {
     let elemento = document.getElementById("email");
     console.log(!elemento.checkValidity());
@@ -126,6 +134,8 @@ function validaremail(e) {
         return true;
     }
 }
+
+/* avisar al usuario con un alert cuando pulse shift + una tecla del teclado */
 function emailMay(e) {
     
     emailminusculas();
