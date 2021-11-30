@@ -308,7 +308,8 @@ textarea {
 
 button {
   background-color: #4e9f3d;
-  width: 5em;
+  width: 6em;
+  height: 3em;
   font-family: Poppins;
   border-radius: 10px;
   margin-left: 35em;
