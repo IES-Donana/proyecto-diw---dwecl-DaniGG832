@@ -159,14 +159,16 @@ span {
 .proyectoweb {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: start;
+  margin-left: 4em;
 }
+
 
 .proyectoweb img {
   height: 12em;
   width: 25em;
-  margin: 1em 3em 0.5em;
+  margin: 1.5em 0em 1em ;
 }
 
 .proyectoweb p {

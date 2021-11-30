@@ -47,6 +47,7 @@ function validar(evento) {
     evento.preventDefault();
     console.log("el formulario no se ha mandado");
     alert("Completa los campos correctamente");
+    
     return false;
   }
 }
@@ -68,9 +69,11 @@ function validarnombre(e) {
 
   if (!elemento.checkValidity()) {
     error(elemento, "errornombre");
+    evento.focus();
     return false;
   } else {
     borrarerror(elemento, "errornombre");
+    
     return true;
   }
 }
@@ -82,6 +85,7 @@ function validarapellido(e) {
 
   if (!elemento.checkValidity()) {
     error(elemento, "errorapellido");
+    evento.focus();
     return false;
   } else {
     borrarerror(elemento, "errorapellido");
@@ -96,6 +100,7 @@ function validartelefono(e) {
   console.log(!elemento.checkValidity());
   if (!elemento.checkValidity()) {
     error(elemento, "errortlf");
+    evento.focus();
     return false;
   } else {
     borrarerror(elemento, "errortlf");
@@ -116,7 +121,7 @@ function validaremail(e) {
   console.log(!elemento.checkValidity());
   if (!elemento.checkValidity()) {
     error(elemento, "erroremail");
-
+    evento.focus();
     return false;
   } else {
     borrarerror(elemento, "erroremail");
@@ -146,6 +151,7 @@ function validartextarea(e) {
     if (elemento.validity.valueMissing) {
       document.getElementById("mensajetexarea").innerHTML =
         "Rellene el texarea por favor, debe de tener min 10 caracteres ";
+        evento.focus();
     } else {
       error(elemento, "mensajetexarea");
     }
