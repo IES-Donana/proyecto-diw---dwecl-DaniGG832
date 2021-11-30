@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,81 +7,65 @@
   <title>Contacto</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
-  <script defer src="js/validacion.js"></script>
 </head>
 <body>
   <header>
     <div>
-      <a href="index.html"><img id="logo" src="img/icono-dg.png" alt="logo, letras d g"></a>
+      <img id="logo" src="img/icono dg.png" alt="logo, letras d g">
     </div>
-    <nav id="menu">
+    <main id="menu">
       <ul id="enlacesmenu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Sobre-mi.html">Sobre Mi</a></li>
-        <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
-        <li><a href="testimonios.html">Testimonios</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="redes-sociales.html">Redes Sociales</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html">Inicio</li></a>
+        <li><a href="Sobre-mi.html">Sobre Mi</li></a>
+        <li><a href="mis-proyectos.html">Mis Proyectos</li></a>
+        <li><a href="testimonios.html">Testimonios</li></a>
+        <li><a href="curriculum.html">Curriculum</li></a>
+        <li><a href="redes-sociales.html">Redes Sociales</li></a>
+        <li><a href="contacto.html">Contacto</li></a>
       </ul>
-    </nav>
+    </main>
   </header>
+  <article id="contenido">
     <article id="contenido">
         <section >
           <div>
-            <h2 id="titulo">Formulario de Contacto:</h2>
+            <h1 id="titulo">Formulario de Contacto:</h1>
           </div>
-          <form id="formContacto" action="validar.php" method="post">
+          <form action="">
             
              <div id="formulario1">
                 <div>
                 <div>
                  <label for="nombre">Nombre:</label>
-                 <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Za-z]{2,20}" 
-                 required="required" title="Introduce de 2 a 20 caracteres">
-                 <p id="errornombre"></p>
+                 <input type="text" id="nombre">
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
-                 <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}" 
-                 required="required" title="Introduce de 2 a 50 caracteres">
-                 <p id="errorapellido"></p>
+                 <input type="text" id="apellidos">
+                
                 </div>
                 <div>
-                  <label for="telefono">Telefono:</label>
-                  <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
-                  placeholder="000-000-000" title='ej: 000-000-000' >
-                  <p id="errortlf"></p>
-                 </div>
-                <div>
-                 <label for="email">Email:</label>
-                 <input type="email" id="email"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
-                 title='ej: "name@example.com"' required="required">
-                 <p id="erroremail"></p>
+                 <label for="nombre">Email:</label>
+                 <input type="email" id="nombre">
+                
                 </div>
-                
-                
               </div>
               <div>
-                 <img id="imgform" src="img/2021-0804.png" alt="foto email enviandose">
+                 <img id="imgform" src="img/2021-0804 LP_Ansprechpartnersuchen_04_Zeichenfläche 1 Kopie 72-b0205a36.png" alt="foto email enviandose">
               </div>
                
            </div>
-           <p id="mensajetexarea">El textarea se habilitara cuando todos los campos sean corrrectos.</p>
            <div>
-            <textarea name="texarea" id="area" cols="30" rows="10" disabled
-            minlength="10" maxlength="1000" title='Introduce de 10 a 1000 caracteres'
-            required="required"></textarea>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
           <div>
-            <button type="submit" id="boton">Enviar</button>
-            <!-- <button type="reset">reset</button> -->
+            <button>Enviar</button>
           </div>
     
          </form>
         </section>
       </article>
-  
+  </article>
   <footer id="pie">
     <div id="copyright">
       <p>®DGWeb</p>
@@ -90,20 +74,20 @@
     <div id="redes">
       <ul>
         <li>
-          <a href="https://github.com/DaniGG832?tab=repositories" target="blan">
+          <a href="https://github.com/DaniGG832?tab=repositories" target="_blan">
           <img src="img/GITHUB_icon-icons.com_65553.png" alt="logo github"></a>
         </li>
         <li>
-          <a href="https://es-es.facebook.com/" target="blan">
+          <a href="https://es-es.facebook.com/" target="_blan">
             <img src="img/FB_icon-icons.com_65534.png" alt="logo facebook">
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/?hl=es" target="blan">
+          <a href="https://www.instagram.com/?hl=es" target="_blan">
             <img src="img/INSTAGRAM_icon-icons.com_65535.png" alt="logo instagram"></a>
         </li>
         <li>
-          <a href="https://twitter.com/?lang=es" target="blan">
+          <a href="https://twitter.com/?lang=es" target="_blan">
             <img src="img/TWITTER_icon-icons.com_65536.png" alt="logo twiter">
           </a>
         </li>
