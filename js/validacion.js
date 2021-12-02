@@ -14,23 +14,23 @@ document.getElementById("email").addEventListener("blur", validaremail);
 
 /* eventos para validar el campo nombre */
 document.getElementById("nombre").addEventListener("keydown", validarnombre);
-document.getElementById("nombre").addEventListener("blur", validarnombre);
+/* document.getElementById("nombre").addEventListener("blur", validarnombre); */
 
 /* eventos para validar el apellido  */
 document
   .getElementById("apellidos")
   .addEventListener("keydown", validarapellido);
-document.getElementById("apellidos").addEventListener("blur", validarapellido);
+/* document.getElementById("apellidos").addEventListener("blur", validarapellido); */
 
 /* eventos para validar el apellido */
 document
   .getElementById("telefono")
   .addEventListener("keypress", validartelefono);
-document.getElementById("telefono").addEventListener("blur", validartelefono);
+/* document.getElementById("telefono").addEventListener("blur", validartelefono); */
 
 /* validar texarea  */
-document.getElementById("area").addEventListener("keydown", validartextarea);
-document.getElementById("area").addEventListener("blur", validartextarea);
+document.getElementById("area").addEventListener("change", validartextarea);
+/* document.getElementById("area").addEventListener("blur", validartextarea); */
 
 /* validar formulario y mandar o parar en caso de faltar algun requisito */
 function validar(evento) {
@@ -54,7 +54,7 @@ function validar(evento) {
 
 /* Habilitar el textarea cuando todos los campos anteriores no estén validados correctamente */
 function habilitar(e) {
-  if (validarnombre() && validarapellido() && validaremail()) {
+  if (validarnombre() && validarapellido() && validaremail() && validartelefono()) {
     console.log("texarea");
     document.getElementById("area").disabled = false;
   } else {
@@ -66,10 +66,12 @@ function habilitar(e) {
 
 function validarnombre(e) {
   let elemento = document.getElementById("nombre");
-
+  elemento.setCustomValidity("");
   if (!elemento.checkValidity()) {
+    textoError(elemento);
     error(elemento, "errornombre");
-    evento.focus();
+    
+    elemento.reportValidity();
     return false;
   } else {
     borrarerror(elemento, "errornombre");
@@ -85,7 +87,7 @@ function validarapellido(e) {
 
   if (!elemento.checkValidity()) {
     error(elemento, "errorapellido");
-    evento.focus();
+    
     return false;
   } else {
     borrarerror(elemento, "errorapellido");
@@ -100,7 +102,7 @@ function validartelefono(e) {
   console.log(!elemento.checkValidity());
   if (!elemento.checkValidity()) {
     error(elemento, "errortlf");
-    evento.focus();
+    
     return false;
   } else {
     borrarerror(elemento, "errortlf");
@@ -121,7 +123,7 @@ function validaremail(e) {
   console.log(!elemento.checkValidity());
   if (!elemento.checkValidity()) {
     error(elemento, "erroremail");
-    evento.focus();
+    
     return false;
   } else {
     borrarerror(elemento, "erroremail");
@@ -151,7 +153,7 @@ function validartextarea(e) {
     if (elemento.validity.valueMissing) {
       document.getElementById("mensajetexarea").innerHTML =
         "Rellene el texarea por favor, debe de tener min 10 caracteres ";
-        evento.focus();
+        
     } else {
       error(elemento, "mensajetexarea");
     }
@@ -167,10 +169,25 @@ function validartextarea(e) {
 /* mensaje error */
 
 function error(elemento, id) {
+  document.getElementById(elemento.id).focus();
   document.getElementById(id).innerHTML = elemento.validationMessage;
+  elemento.reportValidity();
 }
 
 /* borrar mensaje error */
 function borrarerror(elemento, mensaje) {
   document.getElementById(mensaje).innerHTML = "";
+}
+
+/* setCustomValidity */
+
+function textoError(elemento) {
+  
+  if (elemento.validity.valueMissing){ //"true" si elemento es vacio y es "required"
+    elemento.setCustomValidity( "Debe introducir un "+elemento.name );
+    }
+    if (elemento.validity.patternMismatch){ //"true" si elemento no coincide con patrón
+    elemento.setCustomValidity( "Debe introducir un " +elemento.name+ " que coincida con el formato" );
+    }
+    
 }
