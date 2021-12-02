@@ -66,10 +66,11 @@ function habilitar(e) {
 
 function validarnombre(e) {
   let elemento = document.getElementById("nombre");
-
+  elemento.setCustomValidity("");
   if (!elemento.checkValidity()) {
     textoError(elemento);
     error(elemento, "errornombre");
+    
     elemento.reportValidity();
     return false;
   } else {
@@ -188,4 +189,5 @@ function textoError(elemento) {
     if (elemento.validity.patternMismatch){ //"true" si elemento no coincide con patrón
     elemento.setCustomValidity( "Debe introducir un " +elemento.name+ " que coincida con el formato" );
     }
+    
 }
