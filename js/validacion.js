@@ -14,19 +14,19 @@ document.getElementById("email").addEventListener("blur", validaremail);
 
 /* eventos para validar el campo nombre */
 document.getElementById("nombre").addEventListener("keydown", validarnombre);
-/* document.getElementById("nombre").addEventListener("blur", validarnombre); */
+document.getElementById("nombre").addEventListener("blur", validarnombre); 
 
 /* eventos para validar el apellido  */
 document
   .getElementById("apellidos")
   .addEventListener("keydown", validarapellido);
-/* document.getElementById("apellidos").addEventListener("blur", validarapellido); */
+document.getElementById("apellidos").addEventListener("blur", validarapellido); 
 
 /* eventos para validar el apellido */
 document
   .getElementById("telefono")
   .addEventListener("keypress", validartelefono);
-/* document.getElementById("telefono").addEventListener("blur", validartelefono); */
+document.getElementById("telefono").addEventListener("blur", validartelefono);
 
 /* validar texarea  */
 document.getElementById("area").addEventListener("input", validartextarea);
