@@ -29,8 +29,8 @@ document
 /* document.getElementById("telefono").addEventListener("blur", validartelefono); */
 
 /* validar texarea  */
-document.getElementById("area").addEventListener("change", validartextarea);
-/* document.getElementById("area").addEventListener("blur", validartextarea); */
+document.getElementById("area").addEventListener("input", validartextarea);
+document.getElementById("area").addEventListener("blur", validartextarea);
 
 /* validar formulario y mandar o parar en caso de faltar algun requisito */
 function validar(evento) {
@@ -84,8 +84,9 @@ function validarnombre(e) {
 
 function validarapellido(e) {
   let elemento = document.getElementById("apellidos");
-
+  elemento.setCustomValidity("");
   if (!elemento.checkValidity()) {
+    textoError(elemento);
     error(elemento, "errorapellido");
     
     return false;
@@ -99,8 +100,10 @@ function validarapellido(e) {
 
 function validartelefono(e) {
   let elemento = document.getElementById("telefono");
+  elemento.setCustomValidity("");
   console.log(!elemento.checkValidity());
   if (!elemento.checkValidity()) {
+    textoError(elemento);
     error(elemento, "errortlf");
     
     return false;
@@ -121,7 +124,9 @@ function emailminusculas() {
 function validaremail(e) {
   let elemento = document.getElementById("email");
   console.log(!elemento.checkValidity());
+  elemento.setCustomValidity("");
   if (!elemento.checkValidity()) {
+    textoError(elemento);
     error(elemento, "erroremail");
     
     return false;
@@ -147,8 +152,9 @@ function emailMay(e) {
 /* validar texarea */
 function validartextarea(e) {
   let elemento = document.getElementById("area");
-
+  
   if (!elemento.checkValidity()) {
+   
     document.getElementById("mensajetexarea").style.color = "red";
     if (elemento.validity.valueMissing) {
       document.getElementById("mensajetexarea").innerHTML =
@@ -184,10 +190,10 @@ function borrarerror(elemento, mensaje) {
 function textoError(elemento) {
   
   if (elemento.validity.valueMissing){ //"true" si elemento es vacio y es "required"
-    elemento.setCustomValidity( "Debe introducir un "+elemento.name );
+    elemento.setCustomValidity( "Debe introducir un "+ elemento.id );
     }
     if (elemento.validity.patternMismatch){ //"true" si elemento no coincide con patrón
-    elemento.setCustomValidity( "Debe introducir un " +elemento.name+ " que coincida con el formato" );
+    elemento.setCustomValidity( "Debe introducir un " +elemento.id+ " que coincida con el formato" );
     }
     
 }
