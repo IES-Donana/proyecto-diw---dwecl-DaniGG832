@@ -33,7 +33,7 @@ function menuHamburguersa(e) {
     }
     else {
         
-        /*  se crea una clase  */
+        /*  Se cambia el logo y se crea una clase  */
         imgLogo.setAttribute("src", "img/menu-hamburguesa2.png");
         nav.classList.toggle("quitar");
         

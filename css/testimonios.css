@@ -16,6 +16,10 @@
     width: 29em;
     margin-bottom: 3em;
   }
+  #testimonios{
+      display: flex;
+      flex-direction: row;
+  }
   
   
   #ferreteria {

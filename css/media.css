@@ -131,10 +131,7 @@ div.sobre {
 
 /* testimonios */
 
-#testimonios {
-  display: flex;
-  flex-direction: column;
-}
+
 
 #titulo {
   margin-left: 0em;
