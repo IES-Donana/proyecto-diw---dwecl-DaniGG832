@@ -11,7 +11,8 @@
     </nav> */
 
 /* seleccionamos el icono de la hamburguesa para realizar el evento */
-document.querySelector("#hamburguesa").addEventListener("click", menuHamburguersa);
+let menu = document.querySelector("#hamburguesa");
+menu.addEventListener("click", menuHamburguersa);
 
 /* variables que hacen referencia al DOM  */
 let imgLogo = document.querySelector("#hamburguesa>img")
@@ -19,19 +20,26 @@ let div = document.querySelector("#hamburguesa");
 let header = document.querySelector("header");
 
 /* funcion que despliega el menu hamburguesa */
-function menuHamburguersa() {
+function menuHamburguersa(e) {
 
     console.log(nav.isConnected);
     if (!nav.isConnected) {
 
         div.insertAdjacentElement("beforebegin", nav);
         imgLogo.setAttribute("src", "img/xx-hambu.png");
-
-
+        nav.classList.toggle("quitar");
+ 
     }
     else {
-        nav.remove();
+        
+        /*  nav.remove(); */
         imgLogo.setAttribute("src", "img/menu-hamburguesa2.png");
+        nav.classList.toggle("quitar");
+        menu.removeEventListener("click", menuHamburguersa);
+        setTimeout(()=>{nav.remove();
+            menu.addEventListener("click", menuHamburguersa);
+            }, 1200);
+        
     }
 
 }
@@ -48,6 +56,7 @@ let nodoText = ["Inicio", "Sobre Mi", "Mis Proyectos", "Testimonios", "Curriculu
 /* creamos los elementos del menu y creamos la estructura */
 let nav = document.createElement("nav");
 nav.setAttribute("id", "menu-hamburguesa");
+nav.setAttribute("class", "quitar");
 
 let ul = document.createElement("ul");
 ul.setAttribute("id", "enlaces-hamburguesa");

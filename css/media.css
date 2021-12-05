@@ -1,5 +1,11 @@
-
-
+@keyframes movermenu {
+  from {margin-left: -25em;}
+  to {margin-left: 10em;;}
+}
+@keyframes quitarmenu {
+  from {margin-left: 10em;}
+  to {margin-left: -25em;;}
+}
 
 nav#menu-hamburguesa{
   position: absolute;  
@@ -9,15 +15,17 @@ nav#menu-hamburguesa{
   display: flex;
   margin: 3em 20em 0em 10em;
    margin-right: 20em; 
-  
    z-index: 500;
  font-size: 1.5em;
- animation-name: movermenu;
-  animation-duration: 3s;
- 
+  animation-name: movermenu;
+  animation-duration: 1.5s;
+  
 }
-
-
+#menu-hamburguesa.quitar{
+  animation-name: quitarmenu;
+  animation-duration: 1.5s;
+  
+}
 
 
 nav#menu-hamburguesa ul{
