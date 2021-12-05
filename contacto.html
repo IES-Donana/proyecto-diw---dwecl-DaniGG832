@@ -38,13 +38,13 @@
                 <div>
                  <label for="nombre">Nombre:</label>
                  <input type="text" id="nombre" minlength="2" maxlength="20" pattern="[A-Z a-z]{2,20}" 
-                 required="required" title="Introduce de 2 a 20 caracteres no numerico">
+                 required="required" title="Introduce de 2 a 20 caracteres no numericos">
                  <p id="errornombre"></p>
                 </div>
                 <div>
                  <label for="apellidos">Apellido:</label>
                  <input type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Z a-z]{2,50}" 
-                 required="required" title="Introduce de 2 a 50 caracteres no numerico">
+                 required="required" title="Introduce de 2 a 50 caracteres no numericos">
                  <p id="errorapellido"></p>
                 </div>
                 <div>
@@ -59,8 +59,6 @@
                  title='ej: "name@example.com"' required="required">
                  <p id="erroremail"></p>
                 </div>
-                
-                
               </div>
               <div>
                  <img id="imgform" src="img/2021-0804.png" alt="foto email enviandose">
@@ -68,6 +66,7 @@
                
            </div>
            <p id="mensajetexarea">Introduzca su comentario:</p>
+           <p id="mensajeTError"></p>
            <div>
             <textarea name="texarea" id="area" cols="30" rows="10" disabled
             minlength="10" maxlength="1000" title='Introduce de 10 a 1000 caracteres'
