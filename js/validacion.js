@@ -1,11 +1,15 @@
 let formulario1 = document.forms[0];
 
+
+
+/* evento al pulsar el boton del formulario */
+document.getElementById("boton").addEventListener("click", validar);
+
 /* evento al hace algun cambio en el formulario y llama a la funcion
 habilitar, donde si se cumple las condiciones se habilita el texarea  */
 formulario1.addEventListener("change", habilitar);
 
-/* evento al pulsar el boton del formulario */
-document.getElementById("boton").addEventListener("click", validar);
+
 
 /* eventos del formulario para el input email */
 document.getElementById("email").addEventListener("keypress", emailMay);
@@ -17,40 +21,49 @@ document.getElementById("nombre").addEventListener("keydown", validarnombre);
 document.getElementById("nombre").addEventListener("blur", validarnombre); 
 
 /* eventos para validar el apellido  */
-document
-  .getElementById("apellidos")
-  .addEventListener("keydown", validarapellido);
+document.getElementById("apellidos").addEventListener("keydown", validarapellido); 
 document.getElementById("apellidos").addEventListener("blur", validarapellido); 
 
 /* eventos para validar el apellido */
-document
-  .getElementById("telefono")
-  .addEventListener("keypress", validartelefono);
+document.getElementById("telefono").addEventListener("keypress", validartelefono); 
 document.getElementById("telefono").addEventListener("blur", validartelefono);
 
 /* validar texarea  */
 document.getElementById("area").addEventListener("input", validartextarea);
 document.getElementById("area").addEventListener("blur", validartextarea);
 
+
+
+
+
+
+
 /* validar formulario y mandar o parar en caso de faltar algun requisito */
-function validar(evento) {
+function validar(e) {
   if (
     validarnombre() &&
     validarapellido() &&
     validartelefono() &&
     validaremail() &&
-    validartextarea() &&
-    confirm("Deseas mandar los datos del formulario")
-  ) {
-    return true;
-  } else {
-    evento.preventDefault();
-    console.log("el formulario no se ha mandado");
-    alert("Completa los campos correctamente");
+    validartextarea()
     
+  ){ 
+    if(!confirm("Deseas mandar los datos del formulario")){
+      e.preventDefault();
+      console.log("el formulario no se ha mandado");
+      return true;
+    }else{
+      return false;
+    }
+    
+  } else {
+    
+    alert("Completa los campos correctamente.");
     return false;
   }
 }
+
+
 
 /* Habilitar el textarea cuando todos los campos anteriores no estén validados correctamente */
 function habilitar(e) {
@@ -69,15 +82,14 @@ function validarnombre(e) {
   elemento.setCustomValidity("");
   if (!elemento.checkValidity()) {
     textoError(elemento);
-    error(elemento, "errornombre");
-    
-    elemento.reportValidity();
-    return false;
+    error(elemento, "errornombre"); 
+    /* elemento.reportValidity(); */
+    return  false;
   } else {
     borrarerror(elemento, "errornombre");
-    
     return true;
   }
+  
 }
 
 /* validar apellido */
@@ -128,8 +140,8 @@ function validaremail(e) {
   if (!elemento.checkValidity()) {
     textoError(elemento);
     error(elemento, "erroremail");
-    
     return false;
+
   } else {
     borrarerror(elemento, "erroremail");
     return true;
@@ -155,45 +167,45 @@ function validartextarea(e) {
   
   if (!elemento.checkValidity()) {
    
-    document.getElementById("mensajetexarea").style.color = "red";
+    document.getElementById("mensajeTError").style.color = "red";
     if (elemento.validity.valueMissing) {
-      document.getElementById("mensajetexarea").innerHTML =
-        "Rellene el texarea por favor, debe de tener min 10 caracteres ";
+      document.getElementById("mensajeTError").innerHTML =
+        "Debe de tener minimo 10 caracteres.";
         
     } else {
-      error(elemento, "mensajetexarea");
+      error(elemento, "mensajeTError");
     }
 
     return false;
   } else {
-    borrarerror(elemento, "mensajetexarea");
+    borrarerror(elemento, "mensajeTError");
 
     return true;
   }
 }
 
-/* mensaje error */
+/* mensaje error  */
 
 function error(elemento, id) {
-  document.getElementById(elemento.id).focus();
+  
   document.getElementById(id).innerHTML = elemento.validationMessage;
-  elemento.reportValidity();
+  /* elemento.reportValidity(); */
 }
 
-/* borrar mensaje error */
+/* borrar mensaje error  */
 function borrarerror(elemento, mensaje) {
   document.getElementById(mensaje).innerHTML = "";
 }
 
-/* setCustomValidity */
+/* setCustomValidity, mensajesa personalizados */
 
 function textoError(elemento) {
   
   if (elemento.validity.valueMissing){ //"true" si elemento es vacio y es "required"
-    elemento.setCustomValidity( "Debe introducir un "+ elemento.id );
+    elemento.setCustomValidity( "El campo "+ elemento.id +" es obligatorio.");
     }
     if (elemento.validity.patternMismatch){ //"true" si elemento no coincide con patrón
-    elemento.setCustomValidity( "Debe introducir un " +elemento.id+ " que coincida con el formato" );
+    elemento.setCustomValidity( "Debe introducir " +elemento.id+ " con el formato correcto." );
     }
     
 }
