@@ -86,9 +86,9 @@ section h2.h1index {
 img#principal {
   height: 18em;
 }
-section p {
-  font-size: 1.5em;
-}
+/* section p {
+  font-size: 1em;
+} */
 
 ul li {
   margin: 0px 1em;
@@ -170,6 +170,7 @@ div.sobre {
 }
 
 /* ---------------------------------- */
+/*  */
 #parproyecto p {
   font-size: 0.8em;
 }
@@ -216,3 +217,4 @@ body#contacto{
 #inicio{
   min-width: 10em;
 }
+

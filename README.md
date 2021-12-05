@@ -40,6 +40,8 @@ https://www.figma.com/proto/6mxgUJHwI4Z6KhjPiaiqWO/Portafolios?node-id=38%3A2&sc
 
 2.También he modificado la página de mis proyectos, ya que se pedia que se pusiera una imagen y un texto por cada proyecto y en mi prototipo no era asi.
 
+3. Se ha creado un menu hamburguesa para el modo responsive, como se pedia en la asignatura de cliente.
+
 ## RECURSOS<a name="id4"></a>
 -https://www.w3schools.com/css/default.asp
 -https://developer.mozilla.org/es/docs/Web/CSS
