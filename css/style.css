@@ -22,6 +22,10 @@
 
   font-family: lora;
 }
+/* body */
+body{
+  min-width: 55em;
+}
 /* ------------------------------------- */
 
 /* cabecera */
@@ -36,11 +40,11 @@ header {
 #logo {
   width: 12em;
   margin-left: 3em;
-  transition: width 3s;
+  transition: width 2s;
 }
 
 #logo:hover {
-  width: 20em;
+  width: 15em;
 }
 
 ul {
@@ -55,14 +59,14 @@ ul {
 }
 ul li {
   margin: 0px 1em;
-  list-style: none;
+  
 }
 
 li a {
   color: #4e9f3d;
   font-weight: bold;
   font-variant: small-caps;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: Poppins;
 
 }
@@ -71,7 +75,7 @@ li a {
 
 li a:hover {
   color: #d8e9a8;
-  text-decoration: overline;
+  text-decoration: underline;
   transition: 1.5s;
 }
 
@@ -96,6 +100,25 @@ li a:hover {
 }
 
 /* ------------------------------------- */
+
+/* menu hamburguesa */
+nav#menu-hamburguesa{
+  display: none;
+}
+
+#menu-hambur{
+  display: none;  
+
+}
+
+#hamburguesa{
+  display: none;
+}
+
+#hamburguesa img{
+  width: 3em;
+}
+
 /* footer */
 
 footer {
