@@ -1,6 +1,8 @@
 /*  */
 @import url("sobre-mi.css");
 @import url("contacto.css");
+@import url("curriculum.css");
+@import url("mis-proyectos.css");
 
 @font-face {
   font-family: "Poppins";
@@ -162,55 +164,6 @@ span {
 
 /* ------------------------------------- */
 
-/* mis proyectos  */
-#proyectos{
-  min-width: 65em;
-}
-#proyectoweb h2{
-    justify-content: end;
-}
-#imgempresas div img {
-  margin: 3em 2em;
-  height: 4em;
-}
-
-
-
-#misproyectosweb {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: 3em;
-}
-
-.proyectoweb h2 {
-  font-size: 1em;
- 
-}
-
-.proyectoweb {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: start;
-  margin-left: 4em;
-}
-
-
-.proyectoweb img {
-  height: 12em;
-  width: 25em;
-  margin: 1.5em 0em 1em ;
-}
-
-.proyectoweb p {
-  margin-bottom: 2em;
-  width: 28em;
-  font-size: 0.9em;
-}
-
-/* ------------------------------------- */
 
 
 
@@ -293,70 +246,6 @@ span {
 
 /* ---------------------------------- */
 
-/* curriculum */
-
-body#curriculum{
-  min-width: 65em;
-}
-
-#contenidocurriculum {
-  display: flex;
-}
-
-#lineacentral {
-  border-right: 2px solid #4e9f3d;
-}
-
-#cajasdere {
-  margin-top: 10em;
-}
-
-.caja p {
-  justify-content: center;
-  color: #1e5128;
-  font-size: 1em;
-}
-
-.caja {
-  height: 10em;
-  width: 20em;
-  background-color: #4e9f3d;
-  margin: 6em;
-  border-radius: 20px;
-  padding: 0em 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-span {
-  text-decoration: underline;
-}
-
-.cajalineaizq {
-  position: absolute;
-  border-top: 2px solid #4e9f3d;
-  margin-left: 28em;
-  margin-top: 5em;
-  width: 6em;
-}
-
-.cajalineader1 {
-  position: absolute;
-  border-top: 2px solid #4e9f3d;
-  margin-top: 11em;
-  width: 6em;
-}
-
-.cajalineader2 {
-  position: absolute;
-  border-top: 2px solid #4e9f3d;
-  margin-top: 5em;
-  width: 6em;
-}
-
-/* ---------------------------------- */
 
 /* contenido general */
 

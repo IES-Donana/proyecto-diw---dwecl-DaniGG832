@@ -1,10 +1,10 @@
 @keyframes movermenu {
-  from {margin-left: -25em;}
-  to {margin-left: 10em;;}
+  from {margin-left: -30em;}
+  to {margin-left: 11em;;}
 }
 @keyframes quitarmenu {
-  from {margin-left: 10em;}
-  to {margin-left: -25em;;}
+  from {margin-left: 11em;}
+  to {margin-left: -30em;;}
 }
 
 nav#menu-hamburguesa{
@@ -13,7 +13,7 @@ nav#menu-hamburguesa{
   width: 10em;
   z-index: 500;
   display: flex;
-  margin: 3em 20em 0em 10em;
+  margin: 3em 20em 0em 11em;
    margin-right: 20em; 
    z-index: 500;
  font-size: 1.5em;
@@ -95,10 +95,7 @@ ul li {
 }
 
 /* menu hamburguesa */
-#menu-hambur{
 
-
-}
 #hamburguesa{
   display: flex;
 
@@ -217,5 +214,5 @@ body#contacto{
 
 
 #inicio{
-  min-width: auto;
+  min-width: 10em;
 }
