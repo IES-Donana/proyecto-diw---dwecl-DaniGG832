@@ -37,8 +37,8 @@ function menuHamburguersa(e) {
         nav.classList.toggle("quitar");
         menu.removeEventListener("click", menuHamburguersa);
         setTimeout(()=>{nav.remove();
-            menu.addEventListener("click", menuHamburguersa);
-            }, 1200);
+                        menu.addEventListener("click", menuHamburguersa);}
+                        , 1500);
         
     }
 
