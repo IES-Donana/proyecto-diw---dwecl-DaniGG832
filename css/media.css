@@ -62,7 +62,7 @@ header {
 }
 
 body{
-  min-width: 22em;
+  min-width: 10em;
 }
 /* #logo {
   height: 4em;
@@ -199,4 +199,23 @@ div.sobre {
 #parrtest {
   margin-top: 3em;
   width: 19em;
+}
+/* formulario  */
+#imgform{
+  display: none;
+}
+textarea{
+  width: 25em;
+}
+body#contacto{
+  min-width: 40em;
+}
+
+#proyectos, #sobre-mi{
+  min-width: 30em;
+}
+
+
+#inicio{
+  min-width: auto;
 }
