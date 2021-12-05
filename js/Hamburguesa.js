@@ -24,18 +24,23 @@ function menuHamburguersa(e) {
 
     console.log(nav.isConnected);
     if (!nav.isConnected) {
-
+        /* se inserta el menu y se cambia la foto */
         div.insertAdjacentElement("beforebegin", nav);
         imgLogo.setAttribute("src", "img/xx-hambu.png");
+        /* se elinina la clase  */
         nav.classList.toggle("quitar");
  
     }
     else {
         
-        /*  nav.remove(); */
+        /*  se crea una clase  */
         imgLogo.setAttribute("src", "img/menu-hamburguesa2.png");
         nav.classList.toggle("quitar");
+        
+        /* se elimina el evento para evitar doble pulsasion */
         menu.removeEventListener("click", menuHamburguersa);
+
+        /* se elimina el menu y se vuelve a crear el evento */
         setTimeout(()=>{nav.remove();
                         menu.addEventListener("click", menuHamburguersa);}
                         , 1500);
