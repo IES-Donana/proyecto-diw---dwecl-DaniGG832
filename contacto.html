@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/validacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    [x-cloak]{
+        visibility: hidden;
+        overflow: hidden;
+        display: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -68,11 +77,21 @@
                
            </div>
            <p id="mensajetexarea">El textarea se habilitara cuando todos los campos sean corrrectos.</p>
-           <div>
+           <!-- <div>
             <textarea name="texarea" id="area" cols="30" rows="10" disabled
             minlength="10" maxlength="1000" title='Introduce de 10 a 1000 caracteres'
-            required="required"></textarea>
-          </div>
+            required="required" rows="4" maxlength="210" x-model="maximum" x-ref="maximum"
+            class="block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none"></textarea>
+            <span class="absolute px-2 py-1 text-xs text-white bg-blue-500 rounded right-2 bottom-2" x-text="$refs.maximum.getAttribute('maxlength') - maximum.length" x-cloak></span>
+          </div> -->
+          <div>
+            <div class='flex flex-col relative max-w-sm w-full rounded-lg overflow-hidden mx-auto' x-data="{maximum: ''}">
+                <h2 class="font-bold mb-1 text-gray-700 block">Letters Counter</h2>
+                <textarea disabled name="texarea" id="area" rows="8" maxlength="210" x-model="maximum" x-ref="maximum"
+                class="block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none"></textarea>
+                <p class="absolute px-2 py-1 text-xs text-white bg-blue-500 rounded right-2 bottom-2" x-text="$refs.maximum.getAttribute('maxlength') - maximum.length" x-cloak>hola</p>
+            </div>
+        </div>
           <div>
             <button type="submit" id="boton">Enviar</button>
             
