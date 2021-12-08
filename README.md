@@ -44,6 +44,11 @@ https://www.figma.com/proto/6mxgUJHwI4Z6KhjPiaiqWO/Portafolios?node-id=38%3A2&sc
 -https://www.w3schools.com/css/default.asp
 -https://developer.mozilla.org/es/docs/Web/CSS
 
+Se ha añadido a mi proyecto:
+
+-https://tailwindcomponents.com/component/live-letters-counter-with-alpinejs
+-https://tailwindcomponents.com/component/simple-vertical-timeline
+
 
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/
