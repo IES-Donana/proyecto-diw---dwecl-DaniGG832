@@ -50,7 +50,7 @@ function menuHamburguersa(e) {
 }
 
 /* variables con los nodos de texto, el atributo href, etiquetas li y a  */
-let textHref = ["index.html", "Sobre-mi.html", "mis-proyectos.html", "testimonios.html", "curriculum.html",
+let textHref = ["index.html", "sobre-mi.html", "mis-proyectos.html", "testimonios.html", "curriculum.html",
     "redes-sociales.html", "contacto.html"];
 let textli = "li";
 let textA = "a";
