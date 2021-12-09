@@ -40,7 +40,8 @@ https://www.figma.com/proto/6mxgUJHwI4Z6KhjPiaiqWO/Portafolios?node-id=38%3A2&sc
 
 2.También he modificado la página de mis proyectos, ya que se pedia que se pusiera una imagen y un texto por cada proyecto y en mi prototipo no era asi.
 
-Se ha añadido a mi proyecto los siguientes componentes de Tailwind.:
+Se ha añadido a mi proyecto los siguientes componentes de Tailwind, en las páginas curriculum y 
+en formulario de ha añadido un Letters Counter en el texarea:
 
 -https://tailwindcomponents.com/component/live-letters-counter-with-alpinejs
 -https://tailwindcomponents.com/component/simple-vertical-timeline
