@@ -1,7 +1,7 @@
 /* <nav id="menu-hamburguesa">
       <ul id="enlaces-hamburguesa">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="Sobre-mi.html">Sobre Mi</a></li>
+        <li><a href="sobre-mi.html">Sobre Mi</a></li>
         <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
         <li><a href="testimonios.html">Testimonios</a></li>
         <li><a href="curriculum.html">Curriculum</a></li>
@@ -50,7 +50,7 @@ function menuHamburguersa(e) {
 }
 
 /* variables con los nodos de texto, el atributo href, etiquetas li y a  */
-let textHref = ["index.html", "Sobre-mi.html", "mis-proyectos.html", "testimonios.html", "curriculum.html",
+let textHref = ["index.html", "sobre-mi.html", "mis-proyectos.html", "testimonios.html", "curriculum.html",
     "redes-sociales.html", "contacto.html"];
 let textli = "li";
 let textA = "a";
