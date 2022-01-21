@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/Hamburguesa.js"></script>
 </head>
+
 <body>
   <audio class="audio" autoplay preload="auto" loop>
     <source src="media/bk-sound.ogg" type="audio/ogg">
@@ -17,6 +19,9 @@
     El navegador no soporta el audio.
   </audio>
   <header>
+    <video id="video-cabecera" autoplay loop >
+      <source src="media/Motion-Graphics.mp4" type="video/mp4">
+    </video>
     <div id="hamburguesa">
       <img src="img/menu-hamburguesa2.png" alt="logo menu hamburguesa">
     </div>
@@ -39,21 +44,25 @@
     <section id="sectestimonio">
       <div>
         <h2 id="titulo">Testimonios:</h2>
-      </div>         
-          <div id="testimonios">
-            <div >
-              <img id="video" src="img/video.jpg" alt="">
-              <p id="parrtest">“Tenía Dificultad en la gestion de mi ferretería, tanto a nivel de material,
-                stock, como a nivel contable y gracias a Daniel, todo fue más sencillo,
-                por el nuevo programa informático que implementó, facilitó las
-                gestiones del almacen, organización de la empresa y mejoras a nivel
-                contable."</p>
-            </div>
-            <div id="ferreteria">
-              <img src="img/gid-home1.png" alt="programa ferreteria">
-              <img src="img/tpv-autonomo.png" alt="programa ferreteria">
-            </div>
-          </div>
+      </div>
+      <div id="testimonios">
+        <div>
+          <video id="video" controls >
+            <source src="media/testimonio.mp4" type="video/mp4">
+            <source src="media/testimonio.ogv" type="video/otg">
+          </video>
+
+          <p id="parrtest">“Tenía Dificultad en la gestion de mi ferretería, tanto a nivel de material,
+            stock, como a nivel contable y gracias a Daniel, todo fue más sencillo,
+            por el nuevo programa informático que implementó, facilitó las
+            gestiones del almacen, organización de la empresa y mejoras a nivel
+            contable."</p>
+        </div>
+        <div id="ferreteria">
+          <img src="img/gid-home1.png" alt="programa ferreteria">
+          <img src="img/tpv-autonomo.png" alt="programa ferreteria">
+        </div>
+      
     </section>
   </article>
   <footer id="pie">
@@ -65,7 +74,7 @@
       <ul>
         <li>
           <a href="https://github.com/DaniGG832?tab=repositories" target="blan">
-          <img src="img/GITHUB_icon-icons.com_65553.png" alt="logo github"></a>
+            <img src="img/GITHUB_icon-icons.com_65553.png" alt="logo github"></a>
         </li>
         <li>
           <a href="https://es-es.facebook.com/" target="blan">
@@ -85,4 +94,5 @@
     </div>
   </footer>
 </body>
+
 </html>
