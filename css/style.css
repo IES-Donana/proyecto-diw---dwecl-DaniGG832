@@ -24,17 +24,18 @@
 
 /* animacion footer */
 @keyframes redes-footer {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  
+ from { top:-75em;}
+  to { top:0px;}
 }
 
 #redes ul li img {
   width: 2em;
+  background-color: #1e5128;
+  border-radius: 10px;
+  position: relative;
   animation-name: redes-footer;
-  animation-duration: 4s;
+  animation-duration: 20s;
 
 }
 
