@@ -41,22 +41,28 @@
   <article id="contenido">
     <section>
       <div>
-        <h2 id="titulo">Datos de Contacto:</h2>
+        <h2 id="titulo">Datos de Contacto</h2>
       </div>
       <div id="contenidoredes">
         <div >
-          <div class="redes">
-            <img  class="logocontacto" src="img/ic_call_128_28145.png" alt="logo teléfono">
-            <p>678575693</p>
-          </div>
-          <div class="redes">
-            <img  class="logocontacto" src="img/email_green_23345.png" alt="logo email">
-            <p>daniel.gonzalez.garcia@iesdonana.org</p>
-          </div>
-          <div class="redes">
-            <img  class="logocontacto" src="img/map-map-marker-icon_34394.png" alt="logo mapa">
-            <p>Calle Poda nº 7 Sanlucar de Bda (Cádiz)</p>
-          </div>
+          <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
+          <dialog id="dialogo">
+            <div class="redes">
+              <img  class="logocontacto" src="img/ic_call_128_28145.png" alt="logo teléfono">
+              <p>678575693</p>
+            </div>
+            <div class="redes">
+              <img  class="logocontacto" src="img/email_green_23345.png" alt="logo email">
+              <p>daniel.gonzalez.garcia@iesdonana.org</p>
+            </div>
+            <div class="redes">
+              <img  class="logocontacto" src="img/map-map-marker-icon_34394.png" alt="logo mapa">
+              <p>Calle Poda nº 7 Sanlucar de Bda (Cádiz)</p>
+            </div>
+
+            <button id="show" onclick="document.querySelector('#dialogo').close()" >Cerrar</button>
+          </dialog>
+          
           <div>
            <p id="enunciado"></p> 
           </div>
@@ -72,6 +78,7 @@
             <a href="https://web.whatsapp.com/"><img  class="logocontacto" src="img/whatsapp_socialnetwork_17360.png" alt="logo Whatsaap"></a>
            
           </div>
+        
         </div>
         <div id="mapa">
           <picture>
