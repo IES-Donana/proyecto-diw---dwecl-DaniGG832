@@ -16,7 +16,27 @@
   src: url("../font/lora/Lora-Regular.ttf");
 }
 
+/* animacion elementos menu */
+@keyframes aparecerlogo {
+  from {width: 0em;}
+  to{width: 12em;}
+}
 
+/* animacion footer */
+@keyframes redes-footer {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+#redes ul li img {
+  width: 2em;
+  animation-name: redes-footer;
+  animation-duration: 4s;
+
+}
 
 /* reseteo página */
 
@@ -47,6 +67,8 @@ header {
 }
 
 #logo {
+  animation-name: aparecerlogo;
+  animation-duration: 4s;
   width: 12em;
   margin-left: 3em;
   transition: width 2s;
@@ -82,10 +104,15 @@ li a {
 
 
 
-li a:hover {
+#enlacesmenu li a:hover {
   color: #d8e9a8;
   text-decoration: underline;
+  box-shadow: #000000;
+  font-size: 1.5em; 
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
   transition: 1.5s;
+  
 }
 
 #menu {
@@ -99,9 +126,7 @@ li a:hover {
   align-items: center;
   margin-right: 2em;
 }
-#redes ul li img {
-  width: 2em;
-}
+
 
 #redes, #copyright {
   margin: 0em 1em;
