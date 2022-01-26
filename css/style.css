@@ -52,6 +52,9 @@
   
 } */
 
+summary{
+  color: black;
+}
 
  summary::marker{
   
@@ -74,6 +77,9 @@ dialog{
 }
 /* ------------------ */
 
+
+
+
 /* reseteo página */
 
 * {
@@ -95,7 +101,7 @@ body{
 
 /* cabecera */
 header {
-  /* background-color: #4e9f3d; */
+  background-color: #4e9f3d; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,9 +276,20 @@ img:hover{
 
 /* Video cabecera */
 
-#video-cabecera{
-  position: fixed;
-  min-width: 100%;
-  
+#video{
+  position: absolute;
+  width: 153.1%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -0.06em;
   z-index: -100;
+  filter: grayscale(0.5);
+}
+
+#article-index, #index{
+  filter: opacity(1);
+}
+
+#pie-index{
+  height: 15em;
 }
