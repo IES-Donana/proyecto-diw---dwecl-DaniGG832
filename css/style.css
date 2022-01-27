@@ -62,7 +62,7 @@ summary {
 }
 
 summary::marker {
-  /* content: "👉"; */
+   /* content: "👉";  */
 }
 summary::before{
   margin-left: -2em;
@@ -75,7 +75,7 @@ details[open] summary::before {
 
 @keyframes rotate-emoji {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(180deg);
@@ -283,7 +283,7 @@ img:hover {
   object-fit: cover;
   margin-top: -0.06em;
   z-index: -100;
-  filter: grayscale(0.5);
+  filter: grayscale(0.2);
 }
 
 #article-index,
