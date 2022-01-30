@@ -5,17 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redes Sociales</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/Hamburguesa.js"></script>
 </head>
 <body>
+  <audio class="audio" autoplay preload="auto" loop>
+    <source src="media/bk-sound.ogg" type="audio/ogg">
+    <source src="media/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio.
+  </audio>
   <header>
+    
     <div id="hamburguesa">
       <img src="img/menu-hamburguesa2.png" alt="logo menu hamburguesa">
     </div>
     <div>
-      <a href="index.html"><img id="logo" src="img/icono-dg.png" alt="logo, letras d g"></a>
+      <a href="index.html"><img id="logo" src="img/logotipo.svg" alt="logo, letras d g"></a>
     </div>
     <nav id="menu">
       <ul id="enlacesmenu">
@@ -32,22 +39,29 @@
   <article id="contenido">
     <section>
       <div>
-        <h2 id="titulo">Datos de Contacto:</h2>
+        <h2 id="titulo">Datos de Contacto</h2>
       </div>
+      
       <div id="contenidoredes">
         <div >
-          <div class="redes">
-            <img  class="logocontacto" src="img/ic_call_128_28145.png" alt="logo teléfono">
-            <p>678575693</p>
-          </div>
-          <div class="redes">
-            <img  class="logocontacto" src="img/email_green_23345.png" alt="logo email">
-            <p>daniel.gonzalez.garcia@iesdonana.org</p>
-          </div>
-          <div class="redes">
-            <img  class="logocontacto" src="img/map-map-marker-icon_34394.png" alt="logo mapa">
-            <p>Calle Poda nº 7 Sanlucar de Bda (Cádiz)</p>
-          </div>
+          <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
+          <dialog id="dialogo">
+            <div class="redes">
+              <img  class="logocontacto" src="img/ic_call_128_28145.png" alt="logo teléfono">
+              <p>678575693</p>
+            </div>
+            <div class="redes">
+              <img  class="logocontacto" src="img/email_green_23345.png" alt="logo email">
+              <p>daniel.gonzalez.garcia@iesdonana.org</p>
+            </div>
+            <div class="redes">
+              <img  class="logocontacto" src="img/map-map-marker-icon_34394.png" alt="logo mapa">
+              <p>Calle Poda nº 7 Sanlucar de Bda (Cádiz)</p>
+            </div>
+
+            <button id="show" onclick="document.querySelector('#dialogo').close()" >Cerrar</button>
+          </dialog>
+          
           <div>
            <p id="enunciado"></p> 
           </div>
@@ -63,12 +77,21 @@
             <a href="https://web.whatsapp.com/"><img  class="logocontacto" src="img/whatsapp_socialnetwork_17360.png" alt="logo Whatsaap"></a>
            
           </div>
+          <details  >
+            <summary >Click para Mostrar Logo Animado</summary>
+            <img id="logo-git" src="img/Animacion.gif" width="200px" alt=" logo animago gif">
+          </details>
         </div>
         <div id="mapa">
-          <img src="img/diseno-web.png" alt="Dialogo diseño web">
+          <picture>
+            <source media="(min-width:700px)" srcset="img/diseno-web.png" >
+            <img src="img/diseno-web.png" alt="Dialogo diseño web">
+          </picture>
+          
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43000.31229692975!2d-6.347710639155597!3d36.77015163899851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde12a2f8e5ef%3A0xe9bbc21d97ce48c6!2s11540%20Sanl%C3%BAcar%20de%20Barrameda%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1637835239555!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
+      
     </section>
   </article>
   <footer id="pie">
@@ -76,6 +99,7 @@
       <p>®DGWeb</p>
       <p>©Daniel Gonzalez</p>
     </div>
+    
     <div id="redes">
       <ul>
         <li>

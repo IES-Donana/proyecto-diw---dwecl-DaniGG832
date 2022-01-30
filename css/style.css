@@ -16,7 +16,86 @@
   src: url("../font/lora/Lora-Regular.ttf");
 }
 
+/* animacion elementos menu */
+@keyframes aparecerlogo {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 12em;
+  }
+}
 
+/* animacion footer */
+@keyframes redes-footer {
+  from {
+    top: -75em;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+#redes ul li img {
+  width: 2em;
+  background-color: #1e5128;
+  border-radius: 10px;
+  position: relative;
+  animation-name: redes-footer;
+  animation-duration: 20s;
+}
+
+/* UD4-T4. Elementos interactivos */
+
+/* details  {
+  padding: 4px;
+  width: 200px;
+  border: 3px solid #1e5128;
+  border: none;
+  box-shadow: 0px 0px 10px #1e5128;
+  cursor: pointer;
+  
+} */
+
+summary {
+  color: black;
+}
+
+summary::marker {
+   /* content: "👉";  */
+}
+summary::before{
+  margin-left: -2em;
+  position: absolute; 
+  content: "👇";
+}
+details[open] summary::before {
+  animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@keyframes rotate-emoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* dialog */
+
+#show {
+  width: 10em;
+  position: relative;
+  left: -10em;
+}
+dialog {
+  z-index: 2;
+  background-color: #d8e9a8;
+  border: 3px solid #1e5128;
+  border-radius: 3em;
+}
+/* ------------------ */
 
 /* reseteo página */
 
@@ -32,7 +111,7 @@
   font-family: lora;
 }
 /* body */
-body{
+body {
   min-width: 60em;
 }
 /* ------------------------------------- */
@@ -47,6 +126,8 @@ header {
 }
 
 #logo {
+  animation-name: aparecerlogo;
+  animation-duration: 4s;
   width: 12em;
   margin-left: 3em;
   transition: width 2s;
@@ -68,7 +149,6 @@ ul {
 }
 ul li {
   margin: 0px 1em;
-  
 }
 
 li a {
@@ -77,14 +157,15 @@ li a {
   font-variant: small-caps;
   font-size: 1.2em;
   font-family: Poppins;
-
 }
 
-
-
-li a:hover {
+#enlacesmenu li a:hover {
   color: #d8e9a8;
   text-decoration: underline;
+  box-shadow: #000000;
+  font-size: 1.5em;
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
   transition: 1.5s;
 }
 
@@ -99,11 +180,9 @@ li a:hover {
   align-items: center;
   margin-right: 2em;
 }
-#redes ul li img {
-  width: 2em;
-}
 
-#redes, #copyright {
+#redes,
+#copyright {
   margin: 0em 1em;
   font-family: lora;
 }
@@ -111,20 +190,19 @@ li a:hover {
 /* ------------------------------------- */
 
 /* menu hamburguesa */
-nav#menu-hamburguesa{
+nav#menu-hamburguesa {
   display: none;
 }
 
-#menu-hambur{
-  display: none;  
-
-}
-
-#hamburguesa{
+#menu-hambur {
   display: none;
 }
 
-#hamburguesa img{
+#hamburguesa {
+  display: none;
+}
+
+#hamburguesa img {
   width: 3em;
 }
 
@@ -142,7 +220,7 @@ footer {
 /* ---------------------------- */
 
 /* index */
-#inicio{
+#inicio {
   min-width: 60em;
 }
 img#principal {
@@ -167,15 +245,6 @@ span {
 
 /* ------------------------------------- */
 
-
-
-
-
-
-
-
-
-
 /* contenido general */
 
 #titulo {
@@ -184,7 +253,6 @@ span {
   /* text-decoration: underline; */
   font-size: 1.7em;
   font-family: Poppins;
-
 }
 
 article {
@@ -201,4 +269,25 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+img:hover {
+  filter: grayscale(100%);
+}
+
+/* Video cabecera */
+
+#video {
+  position: absolute;
+  width: 153.1%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -0.06em;
+  z-index: -100;
+  filter: grayscale(0.2);
+}
+
+#article-index,
+#index {
+  filter: opacity(1);
 }

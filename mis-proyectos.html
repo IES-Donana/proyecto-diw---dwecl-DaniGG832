@@ -5,17 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis Proyectos</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/Hamburguesa.js"></script>
 </head>
 <body id="proyectos">
+  <audio class="audio" autoplay preload="auto" loop>
+    <source src="media/bk-sound.ogg" type="audio/ogg">
+    <source src="media/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio.
+  </audio>
   <header>
+    
     <div id="hamburguesa">
       <img src="img/menu-hamburguesa2.png" alt="logo menu hamburguesa">
     </div>
     <div>
-      <a href="index.html"><img id="logo" src="img/icono-dg.png" alt="logo, letras d g"></a>
+      <a href="index.html"><img id="logo" src="img/logotipo.svg" alt="logo, letras d g"></a>
     </div>
     <nav id="menu">
       <ul id="enlacesmenu">
@@ -32,22 +39,32 @@
   <article id="contenido">
     <section>
       <div>
-        <h2 id="titulo">Mis Proyectos:</h2>
+        <h2 id="titulo">Mis Proyectos</h2>
       </div>       
           <div id="misproyectosweb">
             
               <div >
                 <div class="proyectoweb">
-                  <h2>Aplicación Web Ferrretería:</h2>
-                  <img  class="imgaplicacion" src="img/ferreteria.jpeg" alt="Foto Ferreteria web">
+                  <h2>Aplicación Web Ferrretería</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/proyecto-2.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/proyecto-2-sm.jpg" >
+                    <img  class="imgaplicacion" src="img/ferreteria.jpeg" alt="web ferreteria">
+                  </picture>
+                  
                   <p>El proyecto consistió en el diseño de una página web para mostrar las novedades y
                      servicio de la empresa así como catálogos de productos. 
                     Una web sencilla e intuitiva para cumplir con su cometido ser visible en Internet y
                      atraer visitas y clientes. </p>
                 </div>
                 <div class="proyectoweb">
-                  <h2>Aplicación Web Tienda de Ropa:</h2>
-                  <img  class="imgaplicacion" src="img/tienda-online.jpg" alt="Foto tienda ropa web">
+                  <h2>Aplicación Web Tienda de Ropa</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/ropa-online.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/ropa-online-sw.jpg" >
+                    <img  class="imgaplicacion" src="img/tienda-online.jpg" alt="Foto tienda ropa web">
+                  </picture>
+                  
                   <p>Os enseñamos un proyecto de diseño de tienda online de ropa personalizada. 
                     Es un proyecto del que estamos especialmente orgullosos porque ha supuesto 
                     un reto por el tamaño de tienda online.</p>
@@ -56,16 +73,26 @@
               </div>
               <div>
                 <div class="proyectoweb">
-                  <h2>Aplicación Informática Gestión Farmacia:</h2>
-                  <img  class="imgaplicacion" src="img/farmacia2.jpeg" alt="Foto farmacia web">
+                  <h2>Aplicación Informática Gestión Farmacia</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/farmacia-74.png" >
+                    <source media="(min-width: 300px)" srcset="img/farmacia-74-sw.png" >
+                    <img  class="imgaplicacion" src="img/farmacia2.jpeg" alt="Foto farmacia web">
+                  </picture>
+                  
                   <p>Desarrollamos, una tienda online en WordPress con WooCommerce a medida, 
                     que incluía todos los aspectos que el cliente consideró fundamentales para que 
                     el posicionamiento de la página fuera idóneo. En este sentido, hay que destacar
                      que, al tratarse de un E-Commerce, los aspectos a tener en cuenta son muchos.</p>
                 </div>
                 <div class="proyectoweb">
-                  <h2>Aplicación Web Alquiler de Vehículos:</h2>
-                  <img  class="imgaplicacion" src="img/alquiler-cocges.jpeg" alt="Foto web alquiler coche ">
+                  <h2>Aplicación Web Alquiler de Vehículos</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/proyecto-1.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/proyecto-1-sw.jpg" >
+                    <img  class="imgaplicacion" src="img/proyecto-1-sw.jpg" alt="Foto web alquiler coche">
+                  </picture>
+                  
                   <p>Este es un proyecto de una empresa dedicada a ofrecer el servicio
                     de alquiler de vehículos , ya sean turismos, ciclomotores o furgonetas.</p>
                 </div>
