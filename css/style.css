@@ -6,6 +6,14 @@
 @import url("redes-sociales.css");
 @import url("testimonios.css");
 
+/* poner el foco al tabular para la accesibilidad */
+
+:focus {
+  background-color: white;
+  padding : 0.5em;
+  border: #000000 3px solid;
+}
+
 /* fuentes */
 @font-face {
   font-family: "Poppins";
