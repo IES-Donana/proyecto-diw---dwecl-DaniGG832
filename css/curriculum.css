@@ -18,7 +18,7 @@ body#curriculum{
   
   .caja p {
     justify-content: center;
-    color: #1e5128;
+    color: #d8e9a8;
     font-size: 1em;
   }
   
@@ -36,8 +36,8 @@ body#curriculum{
   }
   
   span {
-    text-decoration: underline;
-  }
+/*     text-decoration: underline;
+ */  }
   
   .cajalineaizq {
     position: absolute;
