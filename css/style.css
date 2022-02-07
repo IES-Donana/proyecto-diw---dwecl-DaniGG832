@@ -9,6 +9,7 @@
 /* poner el foco al tabular para la accesibilidad */
 
 :focus {
+  color: #1e5128;
   background-color: white;
   padding : 0.5em;
   border: #000000 3px solid;
