@@ -93,7 +93,7 @@ details[open] summary::before {
 
 /* dialog */
 
-#show {
+#show, #close {
   width: 10em;
   position: relative;
   left: -10em;
