@@ -5,17 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/Hamburguesa.js"></script>
 </head>
 <body id="inicio">
+  <audio class="audio" autoplay preload="auto" loop>
+    <source src="media/bk-sound.ogg" type="audio/ogg">
+    <source src="media/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio.
+  </audio>
   <header>
+    
+    
     <div id="hamburguesa">
-      <img src="img/menu-hamburguesa2.png" alt="logo menu hamburguesa">
+      <img src="img/menu-hamburguesa2.png" alt="Logo menú hamburguesa">
     </div>
     <div>
-      <a href="index.html"><img id="logo" src="img/icono-dg.png" alt="logo, letras d g"></a>
+      <a href="index.html"><img id="logo" src="img/logotipo.svg" alt="Logo, letras DG"></a>
     </div>
     <nav id="menu">
       <ul id="enlacesmenu">
@@ -29,39 +37,53 @@
       </ul>
     </nav>
   </header>
-  <article id="contenido">
-
-    <section>
-      <h2 class="h1index"> DANIEL GONZÁLEZ GARCÍA</h2>
+  <article id="" id="article-index">
+    
+    <section id="index">
+      <video id="video" autoplay loop >
+        <source src="media/video-fondo.mp4" type="video/mp4">
+      </video>
+      
+      <h1 class="h1index"> DANIEL GONZÁLEZ GARCÍA</h1>
       <h2 class="h1index">DESARROLLADOR APLICACIONES WEB</h2>
       <div>
-        <img id="principal" src="img/22diseño-web-600.png" alt="foto pc, movil y table ">
+        <picture>
+          <source media="(min-width:700px)" srcset="img/22diseño-web-600.png" >
+          <source media="(min-width:300px)" srcset="img/22diseño-web-600-escalada.png" >
+          <img id="principal" src="img/22diseño-web-600.png" alt="Foto pc, movil y table ">
+        </picture>
+        
+        
       </div>
     </section>
   </article>
-  <footer id="pie">
+  <footer id="pie-index" >
+    
     <div id="copyright">
       <p>®DGWeb</p>
       <p>©Daniel Gonzalez</p>
     </div>
+    
+      
+    
     <div id="redes">
       <ul>
         <li>
           <a href="https://github.com/DaniGG832?tab=repositories" target="blan">
-          <img src="img/GITHUB_icon-icons.com_65553.png" alt="logo github"></a>
+          <img src="img/GITHUB_icon-icons.com_65553.png" alt="Logo github"></a>
         </li>
         <li>
           <a href="https://es-es.facebook.com/" target="blan">
-            <img src="img/FB_icon-icons.com_65534.png" alt="logo facebook">
+            <img src="img/FB_icon-icons.com_65534.png" alt="Logo facebook">
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/?hl=es" target="blan">
-            <img src="img/INSTAGRAM_icon-icons.com_65535.png" alt="logo instagram"></a>
+            <img src="img/INSTAGRAM_icon-icons.com_65535.png" alt="Logo instagram"></a>
         </li>
         <li>
           <a href="https://twitter.com/?lang=es" target="blan">
-            <img src="img/TWITTER_icon-icons.com_65536.png" alt="logo twiter">
+            <img src="img/TWITTER_icon-icons.com_65536.png" alt="Logo twiter">
           </a>
         </li>
       </ul>
