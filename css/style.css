@@ -98,6 +98,7 @@ details[open] summary::before {
   position: relative;
   left: -10em;
 }
+
 dialog {
   z-index: 2;
   background-color: #d8e9a8;
