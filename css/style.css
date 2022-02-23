@@ -23,15 +23,15 @@
 /* Entrega 6 */
 
 
-/* @media print {
+ @media print {
 
 
 
-} */
+} 
 
-/* body header {
+ body header {
   position: fixed;
-  background-color: aqua; 
+  /* background-color: aqua;  */
   min-width: 100%;
   z-index: 100;
   margin-top: -10em;
@@ -41,7 +41,7 @@ body article{
   margin-top: 10em;
 }
 
- */
+ 
 
 /* ------------------------------------------------------------------- */
 
