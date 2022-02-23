@@ -6,14 +6,8 @@
 @import url("redes-sociales.css");
 @import url("testimonios.css");
 
-/* poner el foco al tabular para la accesibilidad */
 
-:focus {
-  color: #1e5128;
-  background-color: white;
-  padding : 0.5em;
-  border: #000000 3px solid;
-}
+
 
 /* fuentes */
 @font-face {
@@ -24,6 +18,48 @@
   font-family: "lora";
   src: url("../font/lora/Lora-Regular.ttf");
 }
+
+
+/* Entrega 6 */
+
+
+/* @media print {
+
+
+
+} */
+
+/* body header {
+  position: fixed;
+  background-color: aqua; 
+  min-width: 100%;
+  z-index: 100;
+  margin-top: -10em;
+}
+
+body article{
+  margin-top: 10em;
+}
+
+ */
+
+/* ------------------------------------------------------------------- */
+
+
+body .h1index{
+
+  color: #d8e9a8;
+  text-shadow: 1px 4px 4px #1e5128;
+}
+/* poner el foco al tabular para la accesibilidad */
+
+:focus {
+  color: #1e5128;
+  background-color: white;
+  padding : 0.5em;
+  border: #000000 3px solid;
+}
+
 
 /* animacion elementos menu */
 @keyframes aparecerlogo {

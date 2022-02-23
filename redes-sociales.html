@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redes Sociales</title>
+  <title>Mis Proyectos</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 700px)" href="css/media.css">
   <script defer src="js/Hamburguesa.js"></script>
 </head>
-<body>
-
-  <header>
-    <div id="hamburguesa">
+<body id="proyectos">
+  <audio class="audio" autoplay preload="auto" loop>
+    <source src="media/bk-sound.ogg" type="audio/ogg">
+    <source src="media/bk-sound.mp3" type="audio/mpeg">
     El navegador no soporta el audio.
   </audio>
   <header>
@@ -23,9 +23,9 @@
     </div>
     <div>
       <a href="index.html"><img id="logo" src="img/logotipo.svg" alt="Logo, letras DG"></a>
-
     </div>
     <nav id="menu">
+      <ul id="enlacesmenu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="sobre-mi.html">Sobre Mi</a></li>
         <li><a href="mis-proyectos.html">Mis Proyectos</a></li>
@@ -39,67 +39,89 @@
   <article id="contenido">
     <section>
       <div>
-        <h1 id="titulo">Datos de Contacto</h1>
-      </div>
-      
-      <div id="contenidoredes">
-        <div >
-          <button id="show" onclick="document.querySelector('#dialogo').show()" >Mostrar Datos</button>
-          <dialog id="dialogo">
-            <div class="redes">
-              <img  class="logocontacto" src="img/ic_call_128_28145.png" alt="Logo teléfono">
-              <p>678575693</p>
-            </div>
-            <div class="redes">
-              <img  class="logocontacto" src="img/email_green_23345.png" alt="Logo email">
-              <p>daniel.gonzalez.garcia@iesdonana.org</p>
-            </div>
-            <div class="redes">
-              <img  class="logocontacto" src="img/map-map-marker-icon_34394.png" alt="Logo mapa">
-              <p>Calle Poda nº 7 Sanlucar de Bda (Cádiz)</p>
-              
-            </div>
-            <button id="close" onclick="document.querySelector('#dialogo').close()" >Cerrar</button>
+        <h1 id="titulo">Mis Proyectos</h1>
+      </div>       
+          <div id="misproyectosweb">
             
-          </dialog>
-          <div>
-           <p id="enunciado"></p> 
+              <div >
+                <div class="proyectoweb">
+                  <h2>Aplicación Web Ferrretería</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/proyecto-2.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/proyecto-2-sm.jpg" >
+                    <img  class="imgaplicacion" src="img/ferreteria.jpeg" alt="Web ferretería">
+                  </picture>
+                  
+                  <p>El proyecto consistió en el diseño de una página web para mostrar las novedades y
+                     servicio de la empresa así como catálogos de productos. 
+                    Una web sencilla e intuitiva para cumplir con su cometido ser visible en Internet y
+                     atraer visitas y clientes. </p>
+                </div>
+                <div class="proyectoweb">
+                  <h2>Aplicación Web Tienda de Ropa</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/ropa-online.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/ropa-online-sw.jpg" >
+                    <img  class="imgaplicacion" src="img/tienda-online.jpg" alt="Foto tienda ropa web">
+                  </picture>
+                  
+                  <p>Os enseñamos un proyecto de diseño de tienda online de ropa personalizada. 
+                    Es un proyecto del que estamos especialmente orgullosos porque ha supuesto 
+                    un reto por el tamaño de tienda online.</p>
+                </div>
+                
+              </div>
+              <div>
+                <div class="proyectoweb">
+                  <h2>Aplicación Informática Gestión Farmacia</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/farmacia-74.png" >
+                    <source media="(min-width: 300px)" srcset="img/farmacia-74-sw.png" >
+                    <img  class="imgaplicacion" src="img/farmacia2.jpeg" alt="Foto farmacia web">
+                  </picture>
+                  
+                  <p>Desarrollamos, una tienda online en WordPress con WooCommerce a medida, 
+                    que incluía todos los aspectos que el cliente consideró fundamentales para que 
+                    el posicionamiento de la página fuera idóneo. En este sentido, hay que destacar
+                     que, al tratarse de un E-Commerce, los aspectos a tener en cuenta son muchos.</p>
+                </div>
+                <div class="proyectoweb">
+                  <h2>Aplicación Web Alquiler de Vehículos</h2>
+                  <picture>
+                    <source media="(min-width: 700px)" srcset="img/proyecto-1.jpg" >
+                    <source media="(min-width: 300px)" srcset="img/proyecto-1-sw.jpg" >
+                    <img  class="imgaplicacion" src="img/proyecto-1-sw.jpg" alt="Foto web alquiler coche">
+                  </picture>
+                  
+                  <p>Este es un proyecto de una empresa dedicada a ofrecer el servicio
+                    de alquiler de vehículos , ya sean turismos, ciclomotores o furgonetas.</p>
+                </div>
+              </div>
+            </div>
+          <div id="imgempresas">
+            <div>
+              <h2 id="titulo2">Empresas para las que he colaborado:</h2>  
+              <div>
+                <img src="img/cisco-logo.png" alt="Logo empresa cisco">
+                <img src="img/logo-iconblanco.png" alt="Logo empresa iconblanco">
+                <img src="img/Ips-Technology-empresa-de-informática-en-León-y-Ponferrada.png" alt="Logo empresa Ips-Technology">
+                <img src="img/lexen_logo_sinfondo.png" alt="Logo empresa lexen">
+              </div>
+              <div>
+                <img src="img/logoepic2.png" alt="Logo empresa logoepic2">
+                <img src="img/LOGO-DAT-2015GRANDE.png" alt="Logo empresa DAT">
+                <img src="img/logo3(1).png" alt="Logo empresa Gadae">
+                <img src="img/logocompletoblue.png" alt="Logo empresa logocompletoblue"> 
+              </div>  
           </div>
-          <div class="redes">
-            <a href="https://twitter.com/?lang=es"><img  class="logocontacto" src="img/1491579583-yumminkysocialmedia02_83111.png" alt="Enlace a la web de twiter"></a>
-            
-          </div>
-          <div class="redes">
-            <a href="https://es-es.facebook.com/"><img  class="logocontacto" src="img/facebook_icon-icons.com_53612.png" alt="Enlace a la web de facebook"></a>
-            
-          </div>
-          <div class="redes">
-            <a href="https://web.whatsapp.com/"><img  class="logocontacto" src="img/whatsapp_socialnetwork_17360.png" alt="Enlace a la web de Whatsaap"></a>
-           
-          </div>
-          <details  >
-            <summary >Click para Mostrar Logo Animado</summary>
-            <img id="logo-git" src="img/Animacion.gif" width="200px" alt=" Logo animago gif">
-          </details>
         </div>
-        <div id="mapa">
-          <picture>
-            <source media="(min-width:700px)" srcset="img/diseno-web.png" >
-            <img src="img/diseno-web.png" alt="Dialogo diseño web">
-          </picture>
-          
-          <iframe lang="en" title="Mapa con la dirección de la empresa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43000.31229692975!2d-6.347710639155597!3d36.77015163899851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde12a2f8e5ef%3A0xe9bbc21d97ce48c6!2s11540%20Sanl%C3%BAcar%20de%20Barrameda%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1637835239555!5m2!1ses!2ses" width="400" height="300" style="border:0;"  loading="lazy"></iframe>
-        </div>
-      </div>
-      
     </section>
   </article>
   <footer id="pie">
     <div id="copyright">
       <p>®DGWeb</p>
-      <p>©Daniel Gonzalez</p>
+      <p>Ulmima actualizacion: 28/02/2022</p>
     </div>
-    
     <div id="redes">
       <ul>
         <li>
