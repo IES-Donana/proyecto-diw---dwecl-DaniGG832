@@ -6,9 +6,6 @@
 @import url("redes-sociales.css");
 @import url("testimonios.css");
 
-
-
-
 /* fuentes */
 @font-face {
   font-family: "Poppins";
@@ -23,15 +20,13 @@
 /* Entrega 6 */
 
 
- @media print {
+ 
 
 
-
-} 
 
  body header {
   position: fixed;
-  /* background-color: aqua;  */
+  
   min-width: 100%;
   z-index: 100;
   margin-top: -10em;

@@ -1,0 +1,43 @@
+#app-informatica {
+  page-break-before: always;
+}
+
+header {
+  position: static;
+  background-color: aqua;
+  min-width: 100%;
+  z-index: 100;
+  margin-top: 0em;
+}
+
+article {
+  margin-top: 0;
+}
+
+header #hamburguesa {
+  display: none;
+}
+
+video[id="video"] {
+  display: none;
+}
+
+section h1[class="h1index"],
+section h2[class="h1index"] {
+  color: black;
+}
+html body header {
+  /* margin-top: 2em; */
+  /* page-break-before:always; */
+}
+html body article {
+  /* margin-top: 12em; */
+}
+
+div[id="imgempresas"] {
+  display: none;
+}
+
+html body div {
+  color: black;
+}
