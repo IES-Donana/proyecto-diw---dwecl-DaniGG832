@@ -42,7 +42,7 @@ body article{
 }
 
 #migas-pan-buscador{
-  border: brown 1px solid;
+  /* border: brown 1px solid; */
   z-index: 20;
   color: black;
   display: flex;
@@ -57,13 +57,13 @@ body article{
 }
  
 #migas-pan{
-  border: brown 1px solid;
+  /* border: brown 1px solid; */
   margin: 0 2em;
 }
 #buscador{
    display: flex;
   flex-direction: row; 
-  border: brown 1px solid;
+  /* border: brown 1px solid; */
   margin: 0;
   justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@ body article{
 
 #boton-buscar{
   margin-top: 3em;
-  border: brown 1px solid;
+  border: #1e5128 1px solid;
    margin-left: 0em; 
 }
 #form-buscar{
@@ -204,6 +204,10 @@ dialog {
 
   font-family: lora;
 }
+html{
+  background-color: #1e5128;
+
+}
 /* body */
 body {
   min-width: 60em;
@@ -310,6 +314,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 7em;
+  min-width: 101%;
 }
 
 /* ---------------------------- */
