@@ -20,10 +20,6 @@
 /* Entrega 6 */
 
 
- 
-
-
-
  body header {
   position: fixed;
   
@@ -33,10 +29,67 @@
 }
 
 body article{
-  margin-top: 10em;
+   margin-top: 10em; 
 }
 
+#contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    
+
+}
+
+#migas-pan-buscador{
+  border: brown 1px solid;
+  z-index: 20;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  /* position: fixed; */
+  margin: 0 2em;
+  height: 4em;
+  
+}
  
+#migas-pan{
+  border: brown 1px solid;
+  margin: 0 2em;
+}
+#buscador{
+   display: flex;
+  flex-direction: row; 
+  border: brown 1px solid;
+  margin: 0;
+  justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+    justify-content: center;
+    
+
+}
+#nput-buscar{
+
+  /* margin-left: 0em; */
+}
+
+#boton-buscar{
+  margin-top: 3em;
+  border: brown 1px solid;
+   margin-left: 0em; 
+}
+#form-buscar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+}
 
 /* ------------------------------------------------------------------- */
 
