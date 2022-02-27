@@ -90,7 +90,13 @@ body article{
   
 
 }
-
+#datos-contacto{
+  display: none;
+}
+iframe{
+  page-break-before:always;
+  display: block;
+}
 /* ------------------------------------------------------------------- */
 
 

@@ -10,40 +10,231 @@
 
 
 
-#app-informatica {
-  page-break-before: always;
+
+*{
+  color: black;
 }
 
-header {
+/* Inicio  */
+#logo {
+
+  width: 10em;
+
+}
+
+div#hamburguesa, video {
+  display: none;
+}
+
+#principal{
+  height: auto;
+  width: auto
+  
+}
+
+/* Curriculum */
+
+.caja span{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span::marker {
+   content: "👉"; 
+
+}
+
+p span::before{
+  content: "➞";
+  margin-right: 10px;
+}
+.caja{
+  /* border: black 1px solid; */
+  margin-top: 50px;
+}
+
+/* -------------------------- */
+
+/* Mis proyectos */
+
+
+#menu,#redes,#buscador{
+  display: none;
+}
+
+header{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#redes{
+  display: none;
+}
+
+
+#proyectos{
+  min-width: 65em;
+}
+#proyectoweb h2{
+    justify-content: end;
+}
+#imgempresas div img {
+  margin: 3em 2em;
+  height: 4em;
+}
+
+
+
+.proyectoweb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+
+  /* margin-left: 4em; */
+ 
+} 
+
+
+
+.proyectoweb img, .proyectoweb p {
+  height: auto;
+  width: 31em;
+  margin: 1.5em 0em 1em ;
+  /* border: black 1px solid; */
+  font-size: 1.2em;
+}
+
+
+/* .proyectoweb p {
+  margin-bottom: 2em;
+  width: 28em;
+  font-size: 0.9em;
+} */
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#misproyectosweb{
+  font-size: 15px; 
+  width: auto;
+  /* border: black 1px solid; */
+}
+
+/* ------------------------------------------------- */
+/* contacto */
+
+input::placeholder{
+  color: transparent;
+}
+
+#imgform{
+  display: none;
+}
+#formulario1{
+  text-align: right;
+  margin: 50px  100px 0 50px;
+
+}
+#boton{
+  display: none;
+}
+
+textarea{
+  
+  height: 300px;
+}
+
+
+/* ------------------- */
+/* Sobre mi */
+
+.quitar-print{
+  display: none;
+}
+
+/* ----------------------------- */
+
+/* redes sociales */
+
+img{
+  width: 5em;
+}
+details{
+  display: none;
+}
+#show,dialog{
+  display: none;
+
+}
+div.saltopagina{
+  display:block;
+  page-break-before:always;
+}
+a[href]:not([href*="index.html"]):not([href*="w3"]):after {
+  content:  attr(href) ;
+  text-decoration: none;
+  margin: 50px;
+  
+}  
+    
+a{
+  text-decoration: none;
+}
+a img{
+  margin-top: 40px;
+}
+
+.redes p{
+  margin: 0 100px;
+ 
+}
+
+
+/*-------------------*/
+
+div[id="imgempresas"] {
+  display: none;
+}
+
+ 
+
+/* header {
   position: static;
-  background-color: aqua;
+ 
   min-width: 100%;
   z-index: 100;
   margin-top: 0em;
 }
-
-article {
+ */
+/* article {
   margin-top: 0;
-}
+} */
 
-header #hamburguesa {
+/* header #hamburguesa {
   display: none;
 }
-
-video[id="video"] {
+ */
+/* video[id="video"] {
   display: none;
-}
+} */
 
-section h1[class="h1index"],
+/* section h1[class="h1index"],
 section h2[class="h1index"] {
   color: black;
-}
-html body header {
+} */
+/* html body header {
   /* margin-top: 2em; */
-  /* page-break-before:always; */
-}
+  /* page-break-before:always; 
+}*/
+/*
 html body article {
-  /* margin-top: 12em; */
+   margin-top: 12em; 
 }
 
 div[id="imgempresas"] {
@@ -52,4 +243,4 @@ div[id="imgempresas"] {
 
 html body div {
   color: black;
-}
+} */
