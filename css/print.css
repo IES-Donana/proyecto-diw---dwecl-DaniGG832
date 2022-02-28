@@ -39,10 +39,7 @@ div#hamburguesa, video {
   font-weight: bold;
 }
 
-span::marker {
-   content: "👉"; 
 
-}
 
 p span::before{
   content: "➞";
