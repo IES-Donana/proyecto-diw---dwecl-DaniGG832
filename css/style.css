@@ -36,8 +36,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 /* Entrega 6 */
 
 
@@ -172,7 +170,6 @@ body .h1index{
   }
 }
 
->>>>>>> diw-entrega-6
 #redes ul li img {
   width: 2em;
   background-color: #1e5128;
@@ -198,16 +195,6 @@ summary {
   color: black;
 }
 
-<<<<<<< HEAD
-summary::marker {
-   /* content: "👉";  */
-}
-summary::before{
-  margin-left: -2em;
-  position: absolute; 
-  content: "👇";
-}
-=======
 
 summary::before{
   margin-left: -2em;
@@ -215,7 +202,6 @@ summary::before{
   content: "➞";
 }
 
->>>>>>> diw-entrega-6
 details[open] summary::before {
   animation: rotate-emoji 0.6s ease-in-out both;
 }
@@ -225,29 +211,17 @@ details[open] summary::before {
     transform: rotate(0deg);
   }
   100% {
-<<<<<<< HEAD
-    transform: rotate(180deg);
-=======
     transform: rotate(90deg);
->>>>>>> diw-entrega-6
   }
 }
 
 /* dialog */
 
-<<<<<<< HEAD
-#show {
-=======
 #show, #close {
->>>>>>> diw-entrega-6
   width: 10em;
   position: relative;
   left: -10em;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> diw-entrega-6
 dialog {
   z-index: 2;
   background-color: #d8e9a8;
@@ -323,16 +297,10 @@ li a {
 }
 
 #enlacesmenu li a:hover {
-<<<<<<< HEAD
-  color: #d8e9a8;
-  text-decoration: underline;
-  box-shadow: #000000;
-=======
   color: #1e5128;
   background-color: #d8e9a8;
   border-radius: 0.2em;
   
->>>>>>> diw-entrega-6
   font-size: 1.5em;
   border: 1px solid black;
   box-shadow: 5px 10px black;
@@ -360,17 +328,10 @@ li a {
 
 
 /* menu hamburguesa */
-<<<<<<< HEAD
-nav#menu-hamburguesa {
-  display: none;
-}
-
-=======
 #menu-hamburguesa {
   display: none;
 }
  
->>>>>>> diw-entrega-6
 #menu-hambur {
   display: none;
 }
