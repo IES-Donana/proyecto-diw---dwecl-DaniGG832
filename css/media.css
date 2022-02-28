@@ -7,6 +7,14 @@
   to {margin-left: -30em;;}
 }
 
+#migas-pan-buscador{
+  /* border: brown 1px solid; */
+ margin-top: 1em;
+  flex-direction: column;
+  
+  
+}
+
 nav#menu-hamburguesa{
   position: absolute;  
   /* background-color: aqua; */
@@ -49,6 +57,7 @@ nav#menu-hamburguesa ul{
   align-items: center;
   
 }
+
 
 
 
@@ -221,4 +230,8 @@ body#contacto{
   
   width:191%;
  
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> diw-entrega-6

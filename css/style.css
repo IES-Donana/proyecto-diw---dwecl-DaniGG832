@@ -36,6 +36,143 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+/* Entrega 6 */
+
+
+ body header {
+  position: fixed;
+  
+  min-width: 100%;
+  z-index: 100;
+  margin-top: -10em;
+}
+
+body article{
+   margin-top: 10em; 
+}
+
+#contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    
+
+}
+
+#migas-pan-buscador{
+  /* border: brown 1px solid; */
+  z-index: 20;
+  /* color: black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  /* position: fixed; */
+  margin: 0 2em;
+  height: 4em;
+  
+}
+ 
+#migas-pan{
+  /* border: brown 1px solid; */
+  margin: 0 2em;
+}
+#buscador{
+   display: flex;
+  flex-direction: row; 
+  /* border: brown 1px solid; */
+  margin: 0;
+  justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+    justify-content: center;
+    
+
+}
+
+
+#boton-buscar{
+  margin-top: 3em;
+  border: #1e5128 1px solid;
+   margin-left: 0em; 
+}
+#form-buscar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+#datos-contacto{
+  display: none;
+}
+iframe{
+  page-break-before:always;
+  display: block;
+}
+
+#migas-pan a{
+  color: #1e5128;
+}
+#migas-pan a:hover{
+  
+  text-decoration:underline;
+ 
+ 
+}
+#migas-pan a:hover:after {
+  left: 0;
+  }
+
+/* ------------------------------------------------------------------- */
+
+
+#logo-git{
+  width: 16em;
+}
+body .h1index{
+
+  color: #d8e9a8;
+  text-shadow: 1px 4px 4px #1e5128;
+}
+/* poner el foco al tabular para la accesibilidad */
+
+:focus {
+  color: #1e5128;
+  background-color: #d8e9a8;
+  padding : 0.5em;  
+  border: #000000 3px solid;
+  box-shadow:0 0   0 5px #4e9f3d;
+  border-radius: 10px;
+}
+
+
+/* animacion elementos menu */
+@keyframes aparecerlogo {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 12em;
+  }
+}
+
+/* animacion footer */
+@keyframes redes-footer {
+  from {
+    top: -75em;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+>>>>>>> diw-entrega-6
 #redes ul li img {
   width: 2em;
   background-color: #1e5128;
@@ -61,6 +198,7 @@ summary {
   color: black;
 }
 
+<<<<<<< HEAD
 summary::marker {
    /* content: "👉";  */
 }
@@ -69,6 +207,15 @@ summary::before{
   position: absolute; 
   content: "👇";
 }
+=======
+
+summary::before{
+  margin-left: -2em;
+  position: absolute; 
+  content: "➞";
+}
+
+>>>>>>> diw-entrega-6
 details[open] summary::before {
   animation: rotate-emoji 0.6s ease-in-out both;
 }
@@ -78,17 +225,29 @@ details[open] summary::before {
     transform: rotate(0deg);
   }
   100% {
+<<<<<<< HEAD
     transform: rotate(180deg);
+=======
+    transform: rotate(90deg);
+>>>>>>> diw-entrega-6
   }
 }
 
 /* dialog */
 
+<<<<<<< HEAD
 #show {
+=======
+#show, #close {
+>>>>>>> diw-entrega-6
   width: 10em;
   position: relative;
   left: -10em;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> diw-entrega-6
 dialog {
   z-index: 2;
   background-color: #d8e9a8;
@@ -109,6 +268,10 @@ dialog {
   /* display: block; */
 
   font-family: lora;
+}
+html{
+  background-color: #1e5128;
+
 }
 /* body */
 body {
@@ -152,7 +315,7 @@ ul li {
 }
 
 li a {
-  color: #4e9f3d;
+  color: #d8e9a8;
   font-weight: bold;
   font-variant: small-caps;
   font-size: 1.2em;
@@ -160,9 +323,16 @@ li a {
 }
 
 #enlacesmenu li a:hover {
+<<<<<<< HEAD
   color: #d8e9a8;
   text-decoration: underline;
   box-shadow: #000000;
+=======
+  color: #1e5128;
+  background-color: #d8e9a8;
+  border-radius: 0.2em;
+  
+>>>>>>> diw-entrega-6
   font-size: 1.5em;
   border: 1px solid black;
   box-shadow: 5px 10px black;
@@ -187,13 +357,20 @@ li a {
   font-family: lora;
 }
 
-/* ------------------------------------- */
+
 
 /* menu hamburguesa */
+<<<<<<< HEAD
 nav#menu-hamburguesa {
   display: none;
 }
 
+=======
+#menu-hamburguesa {
+  display: none;
+}
+ 
+>>>>>>> diw-entrega-6
 #menu-hambur {
   display: none;
 }
@@ -210,11 +387,12 @@ nav#menu-hamburguesa {
 
 footer {
   background-color: #1e5128;
-  color: #9b9b9b;
+  color: #d8e9a8;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7em;
+  min-width: 101%;
 }
 
 /* ---------------------------- */
