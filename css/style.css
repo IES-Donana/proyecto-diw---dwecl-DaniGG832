@@ -72,10 +72,7 @@ body article{
     
 
 }
-#nput-buscar{
 
-  /* margin-left: 0em; */
-}
 
 #boton-buscar{
   margin-top: 3em;
@@ -109,9 +106,11 @@ body .h1index{
 
 :focus {
   color: #1e5128;
-  background-color: white;
-  padding : 0.5em;
+  background-color: #d8e9a8;
+  padding : 0.5em;  
   border: #000000 3px solid;
+  box-shadow:0 0   0 5px #4e9f3d;
+  border-radius: 0.2em;
 }
 
 
