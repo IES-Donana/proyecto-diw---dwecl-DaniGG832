@@ -44,7 +44,7 @@ body article{
 #migas-pan-buscador{
   /* border: brown 1px solid; */
   z-index: 20;
-  color: black;
+  /* color: black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,6 +94,20 @@ iframe{
   page-break-before:always;
   display: block;
 }
+
+#migas-pan a{
+  color: #1e5128;
+}
+#migas-pan a:hover{
+  
+  text-decoration:underline;
+ 
+ 
+}
+#migas-pan a:hover:after {
+  left: 0;
+  }
+
 /* ------------------------------------------------------------------- */
 
 
@@ -110,7 +124,7 @@ body .h1index{
   padding : 0.5em;  
   border: #000000 3px solid;
   box-shadow:0 0   0 5px #4e9f3d;
-  border-radius: 0.2em;
+  border-radius: 10px;
 }
 
 
