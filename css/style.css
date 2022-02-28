@@ -355,7 +355,7 @@ img#principal {
   font-size: 2em;
   font-style: normal;
   font-weight: bold;
-  text-shadow: 1px 4px 4px rgba(78, 159, 61, 2);
+  text-shadow: 1px 4px 4px rgba(78, 159, 61);
   font-weight: bold;
   flex-wrap: nowrap;
 }
