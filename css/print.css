@@ -1,21 +1,9 @@
-/* fuentes */
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/poppins/Poppins-Medium.ttf");
-}
-@font-face {
-  font-family: "lora";
-  src: url("../font/lora/Lora-Regular.ttf");
-}
-
-
-
 
 
 
 *{
   color: black;
-  font-family: ;
+  
 }
 
 /* Inicio  */
